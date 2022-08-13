@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6476723974941795062}
   - component: {fileID: 6476723974941795066}
   - component: {fileID: 6476723974941795069}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Thobias Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,4 +157,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anima: {fileID: 6476723974941795066}
   rdb: {fileID: 6476723974941795062}
-  fire: {fileID: 0}
+  fire: {fileID: 4782417607631059997, guid: 70ba6ac5590a39b41a4c07252ef5e93d, type: 3}

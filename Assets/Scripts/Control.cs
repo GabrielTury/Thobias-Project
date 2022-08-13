@@ -45,7 +45,6 @@ public class Control : MonoBehaviour
         }
 
     }
-   
     void FixedUpdate()
     {
         Reverser();
