@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 1f82609941c1f5344a39b92f5a48a529
+guid: c74fab33809f84d43a0cfa696959c747
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5579255060386398015
-    second: Sprite-idle_0
+      213: 3636735382227698816
+    second: Pulo_DOWN_0
   - first:
-      213: -1079430187730486394
-    second: Sprite-idle_1
+      213: 2959812922109471728
+    second: Pulo_DOWN_1
+  - first:
+      213: -1513923693329192024
+    second: Pulo_DOWN_2
+  - first:
+      213: 7780240470776869132
+    second: Pulo_DOWN_3
+  - first:
+      213: -5585286763220330154
+    second: Pulo_DOWN_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-idle_0
+      name: Pulo_DOWN_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 0
-        width: 24
-        height: 48
+        width: 61
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3fb1a1daee7d6d40800000000000000
-      internalID: 5579255060386398015
+      spriteID: 084c6c7df87487230800000000000000
+      internalID: 3636735382227698816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-idle_1
+      name: Pulo_DOWN_1
       rect:
         serializedVersion: 2
-        x: 62
+        x: 61
         y: 0
-        width: 26
-        height: 47
+        width: 61
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +213,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68bbd7c96f71501f0800000000000000
-      internalID: -1079430187730486394
+      spriteID: 0fb22ffbb2e531920800000000000000
+      internalID: 2959812922109471728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pulo_DOWN_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 61
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abe01a0c667dfae0800000000000000
+      internalID: -1513923693329192024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pulo_DOWN_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 0
+        width: 61
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01f5c79c77f8fb60800000000000000
+      internalID: 7780240470776869132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pulo_DOWN_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 61
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6599f8de7431d72b0800000000000000
+      internalID: -5585286763220330154
       vertices: []
       indices: 
       edges: []

@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 1f82609941c1f5344a39b92f5a48a529
+guid: 1600e23ead788534abb800f2d2191b49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5579255060386398015
-    second: Sprite-idle_0
+      213: -5223753414542357660
+    second: Char Shoot_0
   - first:
-      213: -1079430187730486394
-    second: Sprite-idle_1
+      213: -2501124639771306150
+    second: Char Shoot_1
+  - first:
+      213: -2944807084677651517
+    second: Char Shoot_2
+  - first:
+      213: -3044604217264855624
+    second: Char Shoot_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,7 +175,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-idle_0
+      name: Char Shoot_0
       rect:
         serializedVersion: 2
         x: 13
@@ -183,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3fb1a1daee7d6d40800000000000000
-      internalID: 5579255060386398015
+      spriteID: 46b08f332ff7187b0800000000000000
+      internalID: -5223753414542357660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-idle_1
+      name: Char Shoot_1
       rect:
         serializedVersion: 2
         x: 62
@@ -204,8 +210,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68bbd7c96f71501f0800000000000000
-      internalID: -1079430187730486394
+      spriteID: a57547344683a4dd0800000000000000
+      internalID: -2501124639771306150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Shoot_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 33
+        height: 47
+      alignment: 9
+      pivot: {x: 0.42752028, y: -0.00000004766743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c32cb90f81f127d0800000000000000
+      internalID: -2944807084677651517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Shoot_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 36
+        height: 47
+      alignment: 9
+      pivot: {x: 0.39732063, y: -0.00000004766743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5a54c68946fb5d0800000000000000
+      internalID: -3044604217264855624
       vertices: []
       indices: 
       edges: []

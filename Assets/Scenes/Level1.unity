@@ -735,6 +735,7 @@ GameObject:
   - component: {fileID: 979776780}
   - component: {fileID: 979776782}
   - component: {fileID: 979776781}
+  - component: {fileID: 979776783}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -1350,6 +1351,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &979776783
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979776779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6682d1f7b7ae255479671337a070050e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1042818779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1402,7 @@ MonoBehaviour:
   lifebar: {fileID: 874735375}
   life: 1
   respawn: {fileID: 1158184953}
-  playerprefab: {fileID: 6476723974941795063, guid: a53f5520848d04845b667422254a5339,
+  playerprefab: {fileID: 1989187543047504, guid: c45b7be3af53a5545a80450e64fc63e6,
     type: 3}
   mycamera: {fileID: 963130171}
 --- !u!4 &1042818781

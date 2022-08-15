@@ -87,11 +87,10 @@ public class Control : MonoBehaviour
         {
             jumptime = 1;
         }
-      
 
-            if (jump)
+        if (jump)
             {
-                jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+            jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
                 rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
             }
         
