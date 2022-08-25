@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Control : MonoBehaviour
 {
+    public LayerMask layerMask;
     public Animator anima;
     float xmov;
     public Rigidbody2D rdb;
@@ -62,8 +63,7 @@ public class Control : MonoBehaviour
         }
 
         RaycastHit2D hitright;
-        hitright = Physics2D.Raycast(transform.position+
-            Vector3.up*0.5f, transform.right,1);
+        hitright = Physics2D.Raycast(transform.position+Vector3.up*0.5f, transform.right,1,layerMask);
 
         if (hitright)
         {
@@ -146,7 +146,7 @@ public class Control : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Damage"))
+        if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
         {
             LevelManager.instance.LowDamage();
         }

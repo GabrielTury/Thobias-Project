@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 486334620}
   - component: {fileID: 486334619}
   - component: {fileID: 486334618}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,6 +312,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baril01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -353,6 +365,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -548,6 +572,18 @@ PrefabInstance:
     - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_Name
       value: Baril01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder
@@ -1463,6 +1499,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
 --- !u!1 &1158184953
@@ -1567,7 +1615,7 @@ GameObject:
   - component: {fileID: 1312367290}
   - component: {fileID: 1312367289}
   - component: {fileID: 1312367288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,6 +1851,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baril01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1847,6 +1907,18 @@ PrefabInstance:
     - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_Name
       value: Baril01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder
@@ -1893,6 +1965,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baril01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1937,6 +2021,18 @@ PrefabInstance:
     - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_Name
       value: Baril01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582772903025146, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783957683963776, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874648635542248, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4495438428033782, guid: 530452a3669f48d4e9e34de2108bab85, type: 3}
       propertyPath: m_RootOrder

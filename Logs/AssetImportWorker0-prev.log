@@ -15,11 +15,11 @@ C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63590
+54061
 Successfully changed project path to: C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/Thobias-project
 C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/Thobias-project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 105.23 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 92.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.32f1 (12f8b0834f07)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
@@ -35,7 +35,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -43,37 +43,37 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
-Registered in 0.004974 seconds.
+Registered in 0.004417 seconds.
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 77.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 72.25 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.668 seconds
+- Completed reload, in  1.906 seconds
 Domain Reload Profiling:
-	ReloadAssembly (668ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (1906ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (516ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (448ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (173ms)
+			SetupTypeCache (143ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (202ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (188ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (77ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (71ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -81,175 +81,133 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015112 seconds.
+Registered in 0.802407 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 78.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 72.98 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.216 seconds
+- Completed reload, in  9.252 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2217ms)
-		BeginReloadAssembly (293ms)
+	ReloadAssembly (9253ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (9050ms)
+			LoadAssemblies (6859ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (1712ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadMethodAttributes (1337ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.8 MB.
+System memory in use after: 155.0 MB.
+
+Unloading 77 unused Assets to reduce memory usage. Loaded Objects now: 4043.
+Total: 6.849900 ms (FindLiveObjects: 0.234700 ms CreateObjectMapping: 0.283700 ms MarkObjects: 6.210700 ms  DeleteObjects: 0.119800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefab/Player.prefab
+  artifactKey: Guid(2e984e299f7365c4589c056eb3d5970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Player.prefab using Guid(2e984e299f7365c4589c056eb3d5970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ee79962d840491e23b67a72a5797b8') in 0.287344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 659.488450 seconds.
+  path: Assets/Scripts/IA
+  artifactKey: Guid(d2b52eb8cb4ad354394e42f86c95077d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/IA using Guid(d2b52eb8cb4ad354394e42f86c95077d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8438a576fbc263adbfa01db8d586a4c1') in 0.002095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.711070 seconds.
+  path: Assets/Scripts/IA/SimpleFollow.cs
+  artifactKey: Guid(8448ed1570388614cb58aa8a043c03e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/IA/SimpleFollow.cs using Guid(8448ed1570388614cb58aa8a043c03e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea726a2deb90df5427b08da178248f9') in 0.074058 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015966 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.589 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1590ms)
+		BeginReloadAssembly (172ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (16ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1850ms)
-			LoadAssemblies (870ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1339ms)
+			LoadAssemblies (132ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (373ms)
+			SetupTypeCache (446ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (468ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (565ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (201ms)
-				ProcessInitializeOnLoadMethodAttributes (65ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.7 MB.
-System memory in use after: 154.9 MB.
-
-Unloading 77 unused Assets to reduce memory usage. Loaded Objects now: 4043.
-Total: 5.969100 ms (FindLiveObjects: 0.228600 ms CreateObjectMapping: 0.158800 ms MarkObjects: 5.487000 ms  DeleteObjects: 0.093500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Thobias Animations
-  artifactKey: Guid(09ff2d088f51b574b878ea50514e0413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations using Guid(09ff2d088f51b574b878ea50514e0413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05bbe2a211859ef90f3769b7911e901f') in 0.012075 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.218429 seconds.
-  path: Assets/Thobias Animations/Pulo_AR.png
-  artifactKey: Guid(357ece8ba59caef488842e370727fe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations/Pulo_AR.png using Guid(357ece8ba59caef488842e370727fe59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7b7877503ee5b406d74dd245bcddb9') in 0.121237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Thobias Animations/Pulo_DOWN.png
-  artifactKey: Guid(83eb95f22b25b524999e0d641217ce18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations/Pulo_DOWN.png using Guid(83eb95f22b25b524999e0d641217ce18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeaed869a17649575971627ae3ec23e3') in 0.027878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Thobias Animations/Pulo_UP.png
-  artifactKey: Guid(00bca52c16590e04fae5a4ceb569325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations/Pulo_UP.png using Guid(00bca52c16590e04fae5a4ceb569325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd11351668c8fcc141e61682bbc2ef6') in 0.011311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Thobias Animations/Pulo_LANDING.png
-  artifactKey: Guid(21172bda964cfd24fabdc37df6d9c96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations/Pulo_LANDING.png using Guid(21172bda964cfd24fabdc37df6d9c96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a350bc7d8a4737542758795d150df0d8') in 0.012510 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.290135 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1294cfadfa33e519e6e03b81af58c3') in 0.020377 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980d5e0682f000640fbc9bb9c084e4b3') in 0.023422 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d66fe02661108b393c712ef2de0a53') in 0.022636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f65e70e6002199bf0411e5b9aff940') in 0.016776 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.442760 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d09e3bf9716f0f38a70d9c9f4ce21d') in 0.018779 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.078710 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.258 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2259ms)
-		BeginReloadAssembly (345ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (132ms)
-		EndReloadAssembly (1786ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (613ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (680ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (182ms)
-				ProcessInitializeOnLoadAttributes (352ms)
-				ProcessInitializeOnLoadMethodAttributes (111ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.9 MB.
-System memory in use after: 148.1 MB.
+System memory in use before: 150.2 MB.
+System memory in use after: 150.5 MB.
 
-Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 4056.
-Total: 14.821000 ms (FindLiveObjects: 0.237700 ms CreateObjectMapping: 0.256300 ms MarkObjects: 14.283300 ms  DeleteObjects: 0.042100 ms)
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 4091.
+Total: 6.900100 ms (FindLiveObjects: 0.291000 ms CreateObjectMapping: 0.175800 ms MarkObjects: 6.358000 ms  DeleteObjects: 0.074200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -262,184 +220,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 410.036137 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53802dc8778efddef5c3ba05b5970742') in 0.080947 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.485643 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c83dfbf1329eeced7a447c17318bb20c') in 0.035708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.791297 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867f770aa4f3da83839facee82640272') in 0.019254 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.251549 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f90d0aae900fbe0dd0fb1dfbe98b12e') in 0.031217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.345991 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130bcb761e9d735774886660ed134722') in 0.034711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.267750 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e0e9b98e5849881d5b25692b877ce8') in 0.031723 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.360016 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6a1d01c4c76d7b35105e19cf869f17') in 0.014802 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1747.318707 seconds.
-  path: Assets/Animations/Player.controller
-  artifactKey: Guid(6792fdf51dda68f46960c16564b2e1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Player.controller using Guid(6792fdf51dda68f46960c16564b2e1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54e8a105055427e6820d715ec3c0db3') in 0.035940 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 273.114753 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9176b3e72938b61de348b00521dac6') in 0.053238 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b529c19b0f4605ee185bb104c24b2aa') in 0.012557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1ad02c34e4c783479926b325f60a9e') in 0.024101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a27866eaad3205bacfb9a0c13d87e1') in 0.013931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 33.065589 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7e6e27497a19ce79df35362dd6715f') in 0.018580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.936902 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b7ae258645f1f6c7b3e16da661d3a2') in 0.014115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.407625 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc3b746b7fbe0a0b94da64c3349dbd4') in 0.015883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.885142 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f72adc18ac23834559b4363476739bf') in 0.019778 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.789082 seconds.
-  path: Assets/Thobias Sprites/Sprite-idle.png
-  artifactKey: Guid(1f82609941c1f5344a39b92f5a48a529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Sprite-idle.png using Guid(1f82609941c1f5344a39b92f5a48a529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2386527090a5a74b1ba24948d58681') in 0.030390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.055930 seconds.
-  path: Assets/Thobias Sprites/Char Shoot.png
-  artifactKey: Guid(1600e23ead788534abb800f2d2191b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Char Shoot.png using Guid(1600e23ead788534abb800f2d2191b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3fd4777bb1a1f64d08ace850df1b006') in 0.058579 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.128067 seconds.
-  path: Assets/Thobias Sprites/Char Run.png
-  artifactKey: Guid(0fa051bcf129a6747a350ed00cb7b0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Char Run.png using Guid(0fa051bcf129a6747a350ed00cb7b0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139d8d796d891b7449a8f4befe6b4fd2') in 0.221032 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.381134 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62cce549ed49fb3dec42c01579652475') in 0.040615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.738481 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd165bf4bb70adf87f5ac7a7476b45b19') in 0.019866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.205624 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d20a7b4fe5710ac4a76458fed0618e') in 0.031453 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.139753 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3cf151de1f1229ff21a7a323207628a') in 0.019304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.882368 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc217b50b7d769886a7017b92b8a137') in 0.014322 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.902380 seconds.
-  path: Assets/Thobias Sprites/Pulo_UP.png
-  artifactKey: Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_UP.png using Guid(5215d7ed270dffb498c3eb2d45275a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f314ad27c923bbef1cc32b6bece12f67') in 0.054578 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 73.621199 seconds.
-  path: Assets/Thobias Sprites/Pulo_LANDING.png
-  artifactKey: Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_LANDING.png using Guid(8ebb46f54c1bb214d9d690c1e6b4e625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30814e0e584f708e979758e53b12a507') in 0.025323 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.545268 seconds.
-  path: Assets/Thobias Sprites/Pulo_DOWN.png
-  artifactKey: Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_DOWN.png using Guid(c74fab33809f84d43a0cfa696959c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df74261ddf10656eababcb4e3a860836') in 0.046667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.516801 seconds.
-  path: Assets/Thobias Sprites/Pulo_AR.png
-  artifactKey: Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Sprites/Pulo_AR.png using Guid(0d2784f968eba3a4094ee094ba51667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1551206bdeff90a314acde490c87a301') in 0.030385 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 282.280935 seconds.
-  path: Assets/Thobias Animations/Jump_Up.anim
-  artifactKey: Guid(476427277d4e0fa4e8b21a3143d8823d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations/Jump_Up.anim using Guid(476427277d4e0fa4e8b21a3143d8823d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a075e0a59e6eee9ca827de30a7affa1') in 0.006926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.343618 seconds.
-  path: Assets/Thobias Animations/Thobias_Jump_Up.anim
-  artifactKey: Guid(476427277d4e0fa4e8b21a3143d8823d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thobias Animations/Thobias_Jump_Up.anim using Guid(476427277d4e0fa4e8b21a3143d8823d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeca132057ee546342d59e04f35b4dae') in 0.020087 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

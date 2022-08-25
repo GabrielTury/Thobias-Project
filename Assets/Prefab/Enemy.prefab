@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 7246830322015697049}
   - component: {fileID: 7246830322015697046}
   - component: {fileID: 7246830322015697047}
-  - component: {fileID: 7246830322015697045}
   - component: {fileID: 7246830322015697044}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -50,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -122,22 +122,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.22
---- !u!58 &7246830322015697045
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7246830322015697050}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.7
 --- !u!114 &7246830322015697044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,4 +134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8448ed1570388614cb58aa8a043c03e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circleRadius: 3.21
+  speed: 0.03
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
   target: {fileID: 0}
