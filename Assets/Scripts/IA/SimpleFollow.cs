@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class SimpleFollow : MonoBehaviour
 {
+    public int life = 10;
     [SerializeField] float circleRadius,speed;
     [SerializeField] LayerMask layerMask;
     public GameObject target;
@@ -36,6 +38,15 @@ public class SimpleFollow : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, circleRadius);
+    }
+
+    public void OnParticleCollision()
+    {
+        life--;
+            if(life <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
     /*private void OnTriggerEnter2D(Collider2D collision)
     {
