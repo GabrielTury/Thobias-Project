@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour {
     public static LevelManager instance;
     public SpriteRenderer lifebar;
     public float life = 1;
+    public float touchDamageValue;
     public GameObject respawn;
     public GameObject playerprefab;
     GameObject playerinstance;
@@ -38,6 +39,16 @@ public class LevelManager : MonoBehaviour {
     public void LowDamage()
     {
         life -= 0.1f;
+        life = Mathf.Clamp01(life);
+        if (life <= 0.01f)
+        {
+            Destroy(playerinstance);
+        }
+    }
+
+    public void TouchDamage()
+    {
+        life -= 0.2f; //touchDamageValue;
         life = Mathf.Clamp01(life);
         if (life <= 0.01f)
         {
