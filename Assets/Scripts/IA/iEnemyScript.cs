@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class iEnemyScript : MonoBehaviour
 {
-    [SerializeField]
     [Range (0f, 1f)]
-    public float touchDamageValue;
+    public float touchDamageValue = 0.2f;
+    public static iEnemyScript instance;
 
     [SerializeField]
     private float iEnemyLife = 20;
@@ -23,6 +23,12 @@ public class iEnemyScript : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        //animator.SetBool("STILL", true);
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     //Update
@@ -35,8 +41,12 @@ public class iEnemyScript : MonoBehaviour
     {
         Vector3 heightAdjustment = new Vector3(rangeDistance / 2, rangeHeight, 0);
         RaycastHit2D hit = Physics2D.Raycast (transform.position + heightAdjustment, Vector2.left, rangeDistance, layerMask);
+
         if (hit.collider != null)
         {
+
+            //animator.SetBool("STILL", false);
+            animator.SetBool("IDLE", true);
 
             if (transform.position.x > hit.point.x)
             {
@@ -55,7 +65,7 @@ public class iEnemyScript : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        Vector3 startingPosition = transform.position + new Vector3 (rangeDistance / 2, rangeHeight, 0);
+        Vector3 startingPosition = transform.position + new Vector3 (rangeDistance / 1.5f, rangeHeight, 0);
         Vector3 finalPosition = transform.position + new Vector3(-rangeDistance / 2, rangeHeight, 0);
         Gizmos.DrawLine(startingPosition, finalPosition);
     }
@@ -63,11 +73,13 @@ public class iEnemyScript : MonoBehaviour
     private void OnParticleCollision()
     {
         iEnemyLife--;
+        animator.SetTrigger("TAKINGDAMAGE");
         if (iEnemyLife <= 0)
         {
             Destroy(gameObject);
         }
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -76,5 +88,6 @@ public class iEnemyScript : MonoBehaviour
             LevelManager.instance.TouchDamage();
         }
     }
-    //ver pq no script LevelManager o touchDamageValue não está funcionando (só funciona com números definidos em float)
 }
+//fazer com que o raio que o inimigo nota o player fique para trás e para frente assim que notar,
+//e antes de notar fique com o raio só para frente
