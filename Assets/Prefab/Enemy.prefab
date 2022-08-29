@@ -150,4 +150,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8448ed1570388614cb58aa8a043c03e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  life: 2
+  circleRadius: 4
+  speed: 0.05
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+>>>>>>> Stashed changes
   target: {fileID: 0}
