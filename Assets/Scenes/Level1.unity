@@ -2259,36 +2259,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: iEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5600675190038876349, guid: a190edfab3a314b48a611ee84ac882c4,
-        type: 3}
-      propertyPath: rangeHeightOne
-      value: 0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 5600675190038876349, guid: a190edfab3a314b48a611ee84ac882c4,
-        type: 3}
-      propertyPath: rangeHeightTwo
-      value: 0.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 5600675190038876349, guid: a190edfab3a314b48a611ee84ac882c4,
-        type: 3}
-      propertyPath: atackDamageValue
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 5600675190038876349, guid: a190edfab3a314b48a611ee84ac882c4,
-        type: 3}
-      propertyPath: rangeDistanceOne
-      value: 6.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 5600675190038876349, guid: a190edfab3a314b48a611ee84ac882c4,
-        type: 3}
-      propertyPath: rangeDistanceTwo
-      value: 2.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5600675190038876349, guid: a190edfab3a314b48a611ee84ac882c4,
-        type: 3}
-      propertyPath: touchDamageValue
-      value: 0.05
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a190edfab3a314b48a611ee84ac882c4, type: 3}
 --- !u!1001 &7246830321348919103

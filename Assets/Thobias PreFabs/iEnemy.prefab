@@ -117,10 +117,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e00d362e5bc3aa4598c1d7ab233d18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchDamageValue: 0.2
+  touchDamageValue: 0.05
+  atackDamageValue: 0.26
   iEnemyLife: 20
-  rangeDistance: 3.75
-  rangeHeight: 0.4
+  rangeDistanceOne: 6.41
+  rangeHeightOne: 0.44
+  rangeDistanceTwo: 2.34
+  rangeHeightTwo: 0.72
   iEnemyVelocity: 1.8
   layerMask:
     serializedVersion: 2

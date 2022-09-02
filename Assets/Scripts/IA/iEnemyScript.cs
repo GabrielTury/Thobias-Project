@@ -147,7 +147,7 @@ public class iEnemyScript : MonoBehaviour
             animator.SetTrigger("TAKINGDAMAGE");
             if (iEnemyLife <= 0)
             {
-                Destroy(gameObject);
+                animator.SetBool("DYING", true);
             }
             stillIdle = true;
         }
@@ -155,6 +155,11 @@ public class iEnemyScript : MonoBehaviour
         {
             animator.SetTrigger("DEFENDING");
         }
+    }
+
+    private void FrameToDie()
+    {
+        Destroy(gameObject);
     }
 
 
