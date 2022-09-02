@@ -121,7 +121,7 @@ MonoBehaviour:
   iEnemyLife: 20
   rangeDistance: 3.75
   rangeHeight: 0.4
-  iEnemyVelocity: 0
+  iEnemyVelocity: 1.8
   layerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -159,6 +159,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.33636364, y: 0.48181817}
-  m_Size: {x: 0.6727273, y: 0.96363634}
+  m_Offset: {x: -0.0021600723, y: 0.4756818}
+  m_Size: {x: 0.67068195, y: 0.96522814}
   m_Direction: 0

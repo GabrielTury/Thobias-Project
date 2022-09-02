@@ -54,4 +54,14 @@ public class LevelManager : MonoBehaviour {
             Destroy(playerinstance);
         }
     }
+
+    public void AttackDamage()
+    {
+        life -= iEnemyScript.instance.atackDamageValue;
+        life = Mathf.Clamp01(life);
+        if (life <= 0.01f)
+        {
+            Destroy(playerinstance);
+        }
+    }
 }
