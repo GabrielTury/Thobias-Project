@@ -151,4 +151,11 @@ public class Control : MonoBehaviour
             LevelManager.instance.LowDamage();
         }
     }
+    private void OnParticleCollision(GameObject other)
+    {
+        if (other.gameObject.CompareTag("EnemyShot"))
+        {
+            LevelManager.instance.LowDamage();
+        }
+    }
 }

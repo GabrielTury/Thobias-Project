@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour {
         if (!playerinstance)
         {
             CreatePlayer();
+            //Stationary_Enemy.instance.GetPlayerTransform(); //-- Descobrir pq isso só funciona com 1 ao mesmo tempo
         }
     }
     void CreatePlayer()
