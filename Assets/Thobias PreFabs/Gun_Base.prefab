@@ -4920,7 +4920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shoot: {fileID: 7740967878254391824}
   player: {fileID: 0}
-  rangeRadius: 2.75
+  rangeRadius: 4
   layerMask:
     serializedVersion: 2
     m_Bits: 64

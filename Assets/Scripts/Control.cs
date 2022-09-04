@@ -149,6 +149,7 @@ public class Control : MonoBehaviour
         if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
         {
             LevelManager.instance.LowDamage();
+            SimpleFollow.instance.HitAnimation();
         }
     }
     private void OnParticleCollision(GameObject other)

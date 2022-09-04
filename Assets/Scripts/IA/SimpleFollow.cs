@@ -5,15 +5,19 @@ using UnityEngine.Analytics;
 
 public class SimpleFollow : MonoBehaviour
 {
+    public static SimpleFollow instance;
     public int life = 10;
     [SerializeField] float circleRadius,speed;
     [SerializeField] LayerMask layerMask;
     public GameObject target;
     Rigidbody2D rdb;
+    Animator anima;
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         rdb = GetComponent<Rigidbody2D>();
+        anima = GetComponent<Animator>();
     }
     void CheckRange()
     {
@@ -47,6 +51,11 @@ public class SimpleFollow : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void HitAnimation()
+    {
+        anima.SetTrigger("Hit");
     }
     /*private void OnTriggerEnter2D(Collider2D collision)
     {
