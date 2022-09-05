@@ -13,7 +13,7 @@ public class iEnemyScript : MonoBehaviour
     public static iEnemyScript instance;
 
     [SerializeField]
-    private float iEnemyLife = 20;
+    private float iEnemyLife = 20; //talvez deixar em 7
     [SerializeField]
     float rangeDistanceOne, rangeHeightOne, rangeDistanceTwo, rangeHeightTwo, iEnemyVelocity;
     //deixar iEnemyVelocity em 1.8 e RangeDistanceTwo em 2.34
@@ -61,6 +61,8 @@ public class iEnemyScript : MonoBehaviour
         }
 
         RangeTwo();
+
+        Debug.Log(iEnemyLife);
 
     }
 
@@ -118,7 +120,7 @@ public class iEnemyScript : MonoBehaviour
 
     private void OnSpecificFrame()
     {
-        if (forAttackDamage == true)
+        if (forAttackDamage == true && !animator.GetBool("DYING"))
         {
             LevelManager.instance.AttackDamage();
             forAttackDamage = false;
@@ -142,10 +144,11 @@ public class iEnemyScript : MonoBehaviour
     {
         if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("iEnemy attack") || animator.GetBool("STILL"))
         {
+            animator.SetBool("TAKINGDAMAGE", true);
             iEnemyLife--;
-            animator.SetTrigger("TAKINGDAMAGE");
             if (iEnemyLife <= 0)
             {
+                animator.SetBool("ATTACKING", false);
                 animator.SetBool("DYING", true);
             }
             stillIdle = true;
@@ -154,6 +157,11 @@ public class iEnemyScript : MonoBehaviour
         {
             animator.SetTrigger("DEFENDING");
         }
+    }
+
+    private void ToEndTakingDamage()
+    {
+        animator.SetBool("TAKINGDAMAGE", false);
     }
 
     private void FrameToDie()

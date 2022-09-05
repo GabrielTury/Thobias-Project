@@ -119,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchDamageValue: 0.05
   atackDamageValue: 0.26
-  iEnemyLife: 20
+  iEnemyLife: 5
   rangeDistanceOne: 6.41
   rangeHeightOne: 0.44
   rangeDistanceTwo: 2.34

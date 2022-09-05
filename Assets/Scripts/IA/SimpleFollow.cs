@@ -19,6 +19,9 @@ public class SimpleFollow : MonoBehaviour
         rdb = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
     }
+    /// <summary>
+    /// Checa o se o player esta dentro do range
+    /// </summary>
     void CheckRange()
     {
         Collider2D inRange = Physics2D.OverlapCircle(transform.position, circleRadius, layerMask);
@@ -52,7 +55,9 @@ public class SimpleFollow : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    /// <summary>
+    /// Ativa a animação de dar dano no player.
+    /// </summary>
     public void HitAnimation()
     {
         anima.SetTrigger("Hit");

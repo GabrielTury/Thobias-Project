@@ -27,6 +27,9 @@ public class LevelManager : MonoBehaviour {
             //Stationary_Enemy.instance.GetPlayerTransform(); //-- Descobrir pq isso só funciona com 1 ao mesmo tempo
         }
     }
+    /// <summary>
+    /// Spawna o jogador
+    /// </summary>
     void CreatePlayer()
     {
         playerinstance = Instantiate(playerprefab, respawn.transform.position, Quaternion.identity);
@@ -45,7 +48,9 @@ public class LevelManager : MonoBehaviour {
             Destroy(playerinstance);
         }
     }
-
+    /// <summary>
+    /// Dano que leva quando enconsta iEnemy
+    /// </summary>
     public void TouchDamage()
     {
         life -= iEnemyScript.instance.touchDamageValue;
@@ -55,7 +60,9 @@ public class LevelManager : MonoBehaviour {
             Destroy(playerinstance);
         }
     }
-
+    /// <summary>
+    /// Dano de ataque do iEnemy
+    /// </summary>
     public void AttackDamage()
     {
         life -= iEnemyScript.instance.atackDamageValue;
