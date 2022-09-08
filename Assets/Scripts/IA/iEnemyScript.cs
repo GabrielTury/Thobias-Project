@@ -61,9 +61,6 @@ public class iEnemyScript : MonoBehaviour
         }
 
         RangeTwo();
-
-        Debug.Log(iEnemyLife);
-
     }
 
     private void RangeOne()

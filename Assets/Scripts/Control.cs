@@ -18,25 +18,30 @@ public class Control : MonoBehaviour
     void Update()
     {
         xmov = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump"))
+       /*if (Input.GetButtonDown("Jump"))
         {
-            if (jumptime < 0.1f)
+            if (jumptime > 0.1f)
             {
                 doublejump = true;
             }
-        }
+        }*/
 
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && !doublejump)
         {
             jump = true;
+            print("a");
         }
-        else
+        if (Input.GetButton("Jump") && !jump)
+        {
+            doublejump = true;
+            print("a");
+        }
+        /*else
         {
             jump = false;
-            doublejump = false;
             jumptime = 0;
             jumptimeside = 0;
-        }
+        }*/
         anima.SetBool("Fire", false);
 
         if (Input.GetButtonDown("Fire1"))
@@ -90,9 +95,23 @@ public class Control : MonoBehaviour
 
         if (jump)
             {
-            jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+                jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
                 rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
+                jump = false;
+                doublejump = true;
             }
+        
+        if(doublejump)
+            {
+               // jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+                rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
+                doublejump = false;
+                print(doublejump);
+            }
+        
+    }
+    private void DoubleJump(RaycastHit2D hit)
+    {
         
     }
 
@@ -104,7 +123,6 @@ public class Control : MonoBehaviour
             jumptimeside = 1;
            
         }
-
         if (doublejump)
         {
             PhisicalReverser();
