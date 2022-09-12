@@ -18,30 +18,19 @@ public class Control : MonoBehaviour
     void Update()
     {
         xmov = Input.GetAxis("Horizontal");
-       /*if (Input.GetButtonDown("Jump"))
-        {
-            if (jumptime > 0.1f)
-            {
-                doublejump = true;
-            }
-        }*/
 
-        if (Input.GetButton("Jump") && !doublejump)
+        if (Input.GetButton("Jump"))
         {
             jump = true;
-            print("a");
         }
-        if (Input.GetButton("Jump") && !jump)
-        {
-            doublejump = true;
-            print("a");
-        }
-        /*else
+        else
         {
             jump = false;
             jumptime = 0;
             jumptimeside = 0;
-        }*/
+        }
+        
+        
         anima.SetBool("Fire", false);
 
         if (Input.GetButtonDown("Fire1"))
@@ -50,6 +39,10 @@ public class Control : MonoBehaviour
             anima.SetBool("Fire", true);
         }
 
+        if (Input.GetButtonUp("Jump"))
+        {
+            doublejump = false;
+        }
     }
     void FixedUpdate()
     {
@@ -88,31 +81,23 @@ public class Control : MonoBehaviour
     /// <param name="hit">coloque aqui o raycast hit para altura do chao</param>
     private void JumpRoutine(RaycastHit2D hit)
     {
-        if (hit.distance < 0.1f)
+        if (hit.distance < 0.1f)//detecta quando ta no chao
         {
-            jumptime = 1;
+            jumptime = 2;
         }
 
         if (jump)
             {
-                jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+            
+                jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10/* matematica de interpolação linear */);
                 rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
                 jump = false;
-                doublejump = true;
-            }
-        
-        if(doublejump)
+            if (rdb.velocity.y < -0.2f && !doublejump)
             {
-               // jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
-                rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
-                doublejump = false;
-                print(doublejump);
+                doublejump = true;
+                jumptime = 3;
             }
-        
-    }
-    private void DoubleJump(RaycastHit2D hit)
-    {
-        
+        }
     }
 
     private void JumpRoutineSide(RaycastHit2D hitside)
