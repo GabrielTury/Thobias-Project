@@ -1,0 +1,1031 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.32f1 (12f8b0834f07) revision 1243312'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'pt' Physical Memory: 16255 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/Thobias-project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62047
+Successfully changed project path to: C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/Thobias-project
+C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/Thobias-project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 189.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.32f1 (12f8b0834f07)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Gabriel Tury/Documents/Gabriel/Faculdade/Grupo Thobias/Thobias-project/Thobias-project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   
+    VRAM:     8088 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.004607 seconds.
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 84.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.680 seconds
+Domain Reload Profiling:
+	ReloadAssembly (680ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (531ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (159ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (236ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.666001 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 81.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.038 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3040ms)
+		BeginReloadAssembly (1007ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1968ms)
+			LoadAssemblies (1586ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (370ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (685ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (82ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (328ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3627 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.1 MB.
+System memory in use after: 155.3 MB.
+
+Unloading 77 unused Assets to reduce memory usage. Loaded Objects now: 4056.
+Total: 6.444000 ms (FindLiveObjects: 0.226400 ms CreateObjectMapping: 0.171100 ms MarkObjects: 5.913800 ms  DeleteObjects: 0.131900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(c45b7be3af53a5545a80450e64fc63e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(c45b7be3af53a5545a80450e64fc63e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56149a010f86340adf5a2ea24c69b58') in 0.531368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Prefabs/Baril01.prefab
+  artifactKey: Guid(530452a3669f48d4e9e34de2108bab85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Baril01.prefab using Guid(530452a3669f48d4e9e34de2108bab85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02667c0b397b6048b8197e1b35c098a2') in 0.123471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.964982 seconds.
+  path: Assets/Thobias Sprites/Gun_Base.png
+  artifactKey: Guid(52d2244fa4c4a50488f6dd15d302c190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Gun_Base.png using Guid(52d2244fa4c4a50488f6dd15d302c190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f1bc80603c78ab996bc31cd5a2918e') in 0.166368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Thobias Sprites/IA_INIMIGO_FINAL_2.png
+  artifactKey: Guid(ff2b7ff295256ea49958358b39f64034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/IA_INIMIGO_FINAL_2.png using Guid(ff2b7ff295256ea49958358b39f64034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79e431120985e8625b43ea0486a0946') in 0.098780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Thobias Sprites/Pulo-LANDING2.png
+  artifactKey: Guid(01df717ea15fc6a44a8d569f141b569b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Pulo-LANDING2.png using Guid(01df717ea15fc6a44a8d569f141b569b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde7bebf956df608e4da8e68290efd70') in 0.039572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Thobias Sprites/Pulo-AR2.png
+  artifactKey: Guid(7491fa2f2c48ace46955708587079830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Pulo-AR2.png using Guid(7491fa2f2c48ace46955708587079830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b4ff60930906c4bc20368dcf7b53da') in 0.049190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Thobias Sprites/Gun_Head.png
+  artifactKey: Guid(a574b444d0ead554ca4b9c4c35fa72f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Gun_Head.png using Guid(a574b444d0ead554ca4b9c4c35fa72f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a967379199897ffe2b40a115d424e48') in 0.045635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Thobias Sprites/Pulo-UP2.png
+  artifactKey: Guid(25765be17c82cb84d95f86d6075e2a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Pulo-UP2.png using Guid(25765be17c82cb84d95f86d6075e2a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0606a6002ad5cc099148d429ded77d2c') in 0.374233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002175 seconds.
+  path: Assets/Thobias Sprites/IA_INIMIGO.png
+  artifactKey: Guid(48d52b8605f70cf4ca330a71423b2b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/IA_INIMIGO.png using Guid(48d52b8605f70cf4ca330a71423b2b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b810ba48a87b62e7357264b2eb17ccff') in 0.031200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Thobias Sprites/Pulo-DOWN3.png
+  artifactKey: Guid(afc99e61069f6bc4c919c311fc43578a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Pulo-DOWN3.png using Guid(afc99e61069f6bc4c919c311fc43578a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ef74a7baf2ca2ba7d586492514a353') in 0.063918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.517321 seconds.
+  path: Assets/Thobias Sprites/Tilemap
+  artifactKey: Guid(74220341b4c77a843841c83cb7b56f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap using Guid(74220341b4c77a843841c83cb7b56f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d877607103cfc42d306bbbaaf86f165') in 0.012900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.729417 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset.png
+  artifactKey: Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset.png using Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a21d35ac19399fa4d4b19c70567615b') in 0.042903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.892419 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset.png
+  artifactKey: Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset.png using Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b385d4741a44e42c570575237e26e226') in 0.255720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.979224 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset.png
+  artifactKey: Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset.png using Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62342979f33774f7d0bfe93742af4b4') in 0.328849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.976861 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c602f43d672dec70a9e310494aaa7e') in 0.178910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.257987 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_0.asset
+  artifactKey: Guid(b0ca604eb5070dd43b884d273bbb7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_0.asset using Guid(b0ca604eb5070dd43b884d273bbb7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd408fd8cfc64491cb4182b269f50be') in 0.584279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_10.asset
+  artifactKey: Guid(1a5257674d04f24488b39a223c2e9017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_10.asset using Guid(1a5257674d04f24488b39a223c2e9017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0c5fa0388d648a309353d74a6cf008') in 0.024218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_3.asset
+  artifactKey: Guid(a6b6b5f469879314cb81810736e15520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_3.asset using Guid(a6b6b5f469879314cb81810736e15520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73c8c7ff19ed0240396f006cfd8a282') in 0.016469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000792 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_8.asset
+  artifactKey: Guid(4962cd4a779d7c34bb28cd8b8c377076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_8.asset using Guid(4962cd4a779d7c34bb28cd8b8c377076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1875fda1d5effc4af6f70f8e34dbd1b4') in 0.010767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_1.asset
+  artifactKey: Guid(e3e70e3ad76817644a49c055bf9a5f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_1.asset using Guid(e3e70e3ad76817644a49c055bf9a5f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7edaad1920f1498fa55fd062de82ef3') in 0.013726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_2.asset
+  artifactKey: Guid(7e387989bddf65a45b9ca0b266bf7874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_2.asset using Guid(7e387989bddf65a45b9ca0b266bf7874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1602e650249e32e2214dd23158e756d9') in 0.008764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_11.asset
+  artifactKey: Guid(6eba9d136be285c4b8d1990c4939ebcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_11.asset using Guid(6eba9d136be285c4b8d1990c4939ebcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb149c97cbfe24906c517187a3462ecd') in 0.029636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_13.asset
+  artifactKey: Guid(26b3d443e9a2d7a489f9051177564bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_13.asset using Guid(26b3d443e9a2d7a489f9051177564bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3742cb33a7fc9259229286e6256f17') in 0.019242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_5.asset
+  artifactKey: Guid(6750c507a579caf4ba5e46275d31b25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_5.asset using Guid(6750c507a579caf4ba5e46275d31b25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e08e5a9b1af4448421c78e22803e141') in 0.012803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_12.asset
+  artifactKey: Guid(b6d791ab31324ba408c22faa647314fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_12.asset using Guid(b6d791ab31324ba408c22faa647314fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2803bf02ce7bddacd7c70c49d792cc19') in 0.017296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_4.asset
+  artifactKey: Guid(eb18ca3a7e698da43b031a5cfa44f04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_4.asset using Guid(eb18ca3a7e698da43b031a5cfa44f04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ceb9c2903012eb3e64ffab5d81da4f') in 0.011420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_6.asset
+  artifactKey: Guid(8eb2e460de5b3ff4993956335eda2b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_6.asset using Guid(8eb2e460de5b3ff4993956335eda2b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4def75fa6be9309ff7d22fee004147fd') in 0.012144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_9.asset
+  artifactKey: Guid(8e8bfbb6f696f214a8d81e308571990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_9.asset using Guid(8e8bfbb6f696f214a8d81e308571990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6efd58c8f80ef0d7db487aa861b1dfe2') in 0.019286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000697 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_7.asset
+  artifactKey: Guid(166e6901c109e8940804bcadff3d7eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_7.asset using Guid(166e6901c109e8940804bcadff3d7eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '608870e097f3645ad1910b0fecb4a81c') in 0.064136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.638243 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset.png
+  artifactKey: Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset.png using Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8c971199cf1e43cefd3a1b38feeafc') in 0.322656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.204712 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset.png
+  artifactKey: Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset.png using Guid(8c312bf9d38d02942a5ff89c476e1ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218f879b3e18435c2f2474149603a1f9') in 0.363795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 95.816309 seconds.
+  path: Assets/Scenes/Intro Stage.unity
+  artifactKey: Guid(06f746bb608a5224b99ef0b5eb717fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Intro Stage.unity using Guid(06f746bb608a5224b99ef0b5eb717fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223659660065d8d3df5cb12885274499') in 0.004124 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.108901 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.270 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1270ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1058ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (337ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (378ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3492 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.7 MB.
+System memory in use after: 151.0 MB.
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 4175.
+Total: 6.490200 ms (FindLiveObjects: 0.254000 ms CreateObjectMapping: 0.157300 ms MarkObjects: 5.995100 ms  DeleteObjects: 0.083000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021008 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.551 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2551ms)
+		BeginReloadAssembly (283ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (2122ms)
+			LoadAssemblies (286ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (703ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (786ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (227ms)
+				ProcessInitializeOnLoadAttributes (397ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3492 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.8 MB.
+System memory in use after: 151.0 MB.
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 4178.
+Total: 12.845900 ms (FindLiveObjects: 0.311700 ms CreateObjectMapping: 0.244900 ms MarkObjects: 12.242200 ms  DeleteObjects: 0.045600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 206.161342 seconds.
+  path: Assets/Thobias Sprites/Sprite-idle.png
+  artifactKey: Guid(1f82609941c1f5344a39b92f5a48a529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Sprite-idle.png using Guid(1f82609941c1f5344a39b92f5a48a529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c179ce5318fb186aaafebd98f9408850') in 0.136450 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.161937 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.191 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2191ms)
+		BeginReloadAssembly (284ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (1764ms)
+			LoadAssemblies (270ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (545ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (663ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (200ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (3ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3492 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.8 MB.
+System memory in use after: 151.1 MB.
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 4187.
+Total: 11.599900 ms (FindLiveObjects: 0.413600 ms CreateObjectMapping: 1.167700 ms MarkObjects: 9.972600 ms  DeleteObjects: 0.044700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.083347 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.241 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2241ms)
+		BeginReloadAssembly (257ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (1846ms)
+			LoadAssemblies (273ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (582ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (693ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (184ms)
+				ProcessInitializeOnLoadAttributes (372ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3492 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.8 MB.
+System memory in use after: 151.1 MB.
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 4190.
+Total: 11.450300 ms (FindLiveObjects: 0.269900 ms CreateObjectMapping: 0.414800 ms MarkObjects: 10.727800 ms  DeleteObjects: 0.036900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.222237 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.214 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1214ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1011ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (373ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3492 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.9 MB.
+System memory in use after: 151.1 MB.
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 4193.
+Total: 10.135800 ms (FindLiveObjects: 0.267300 ms CreateObjectMapping: 0.461300 ms MarkObjects: 9.369200 ms  DeleteObjects: 0.037100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 210.042881 seconds.
+  path: Packages/com.unity.2d.tilemap/Editor/Unity.2D.Tilemap.Editor.asmdef
+  artifactKey: Guid(3a9781db4804a9945b9883f3a7c46d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.tilemap/Editor/Unity.2D.Tilemap.Editor.asmdef using Guid(3a9781db4804a9945b9883f3a7c46d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86df9f85098986b5c3bc9f164a1f4748') in 0.007668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.490541 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_14.asset
+  artifactKey: Guid(f8c6c65638f61a0418a772cc3a38027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_14.asset using Guid(f8c6c65638f61a0418a772cc3a38027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ae551555c978a9e9ae331b6829fae5') in 0.036840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_22.asset
+  artifactKey: Guid(f17a28842eb70a140b1112222e6a8075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_22.asset using Guid(f17a28842eb70a140b1112222e6a8075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb78c567954a7b48b0b226b75eee119') in 0.019904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_15.asset
+  artifactKey: Guid(81f0615f3e206144f89fa87cd732f2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_15.asset using Guid(81f0615f3e206144f89fa87cd732f2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bbf096d04ac0d6a5f155fb210346e23') in 0.012478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_21.asset
+  artifactKey: Guid(1f5f0c4d204383a438b1ca4bd5c4f054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_21.asset using Guid(1f5f0c4d204383a438b1ca4bd5c4f054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4790d73ea227c7f42888bd7ee2782208') in 0.011208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_39.asset
+  artifactKey: Guid(6e76dca81880f894c8db005653a0aca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_39.asset using Guid(6e76dca81880f894c8db005653a0aca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d1f8911940fba1fd7dd809d120f967') in 0.015681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_23.asset
+  artifactKey: Guid(0122a0ed82d511c41a5e21c8b7470d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_23.asset using Guid(0122a0ed82d511c41a5e21c8b7470d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a96c4864ca18c187105e82ec979020b') in 0.017916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_18.asset
+  artifactKey: Guid(048dcf3d1e401ea48a42b6bb526e9387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_18.asset using Guid(048dcf3d1e401ea48a42b6bb526e9387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e22e0dd91b8e7d82b4b9d5cacb2e86') in 0.011807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_19.asset
+  artifactKey: Guid(2ea111c142884af4e91630997e556926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_19.asset using Guid(2ea111c142884af4e91630997e556926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76aa8eaa07ec52f84825674797fc86b') in 0.014148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_34.asset
+  artifactKey: Guid(52caa731f942fb94299acfa15dc0558c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_34.asset using Guid(52caa731f942fb94299acfa15dc0558c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06bd3263c28868b7678b45711f326e9') in 0.016928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_37.asset
+  artifactKey: Guid(7145afa1e894f5f4892ce20218abf2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_37.asset using Guid(7145afa1e894f5f4892ce20218abf2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00cb0441994fe229e1fdb1922e17c7c') in 0.014764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_27.asset
+  artifactKey: Guid(333c5084b57c6b4498d9813615245c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_27.asset using Guid(333c5084b57c6b4498d9813615245c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139e2a8d7faa1b9b2e42108081aeec44') in 0.016080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_41.asset
+  artifactKey: Guid(231e437f9b590874999ecb8e2af8296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_41.asset using Guid(231e437f9b590874999ecb8e2af8296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927ea4c3ddc1ee19752392386a815ece') in 0.017389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_44.asset
+  artifactKey: Guid(24daac37129c0f84eb1ba26a15f98687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_44.asset using Guid(24daac37129c0f84eb1ba26a15f98687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59443b7824a972257ef43249231bdd9') in 0.011334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_40.asset
+  artifactKey: Guid(fd8731db90f9f1946b9efb940f964e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_40.asset using Guid(fd8731db90f9f1946b9efb940f964e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411a46f7707bcc43770f8e5df21b4c80') in 0.020308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_16.asset
+  artifactKey: Guid(b9db78d066a350a4db96af72d7b72fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_16.asset using Guid(b9db78d066a350a4db96af72d7b72fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a4af25e10dc75accd80b312af26cf3') in 0.013604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_28.asset
+  artifactKey: Guid(32492c4e41f94a44f9464464b89e198c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_28.asset using Guid(32492c4e41f94a44f9464464b89e198c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607a69612c44d186e05946f5433163c3') in 0.014774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_42.asset
+  artifactKey: Guid(3f1e47cde38f285449802080677a6cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_42.asset using Guid(3f1e47cde38f285449802080677a6cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03518356ecd6fab9da1cca4026c1bd47') in 0.011046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_17.asset
+  artifactKey: Guid(ca9c286c113a7de478bc159f9f18dee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_17.asset using Guid(ca9c286c113a7de478bc159f9f18dee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f81de63654658ac4684225e26b464fb') in 0.018502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_33.asset
+  artifactKey: Guid(a1b78bea2096f844696bda98464b9b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_33.asset using Guid(a1b78bea2096f844696bda98464b9b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b454d4b0f21fc334e7bed85dc87110d3') in 0.012598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_20.asset
+  artifactKey: Guid(bdfc36d804e88d841ba3c4c0ab88e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_20.asset using Guid(bdfc36d804e88d841ba3c4c0ab88e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e189363f5b78eb8729be956fdaeb40d') in 0.019086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_26.asset
+  artifactKey: Guid(4728fbc4e45a41d48bb4bfcfb95b7ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_26.asset using Guid(4728fbc4e45a41d48bb4bfcfb95b7ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35e17a321349375066a6aae6600147d') in 0.018477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_24.asset
+  artifactKey: Guid(1dbfe08cb0b09a14ebe9081eaad28757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_24.asset using Guid(1dbfe08cb0b09a14ebe9081eaad28757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdab478510524bfd430f9205ec040782') in 0.015597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_30.asset
+  artifactKey: Guid(dab514708d778be4a97272177e8918ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_30.asset using Guid(dab514708d778be4a97272177e8918ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17d50ae1f47729c348df89ee3490155') in 0.011619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_43.asset
+  artifactKey: Guid(3f714b4ad85d22940a3a364696485277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_43.asset using Guid(3f714b4ad85d22940a3a364696485277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b80cc6568fc78497abf6cae2dab215') in 0.017937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_29.asset
+  artifactKey: Guid(eea53f77c07575947a082216959a32f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_29.asset using Guid(eea53f77c07575947a082216959a32f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258ab8f194b35e2d3d9c279faf1211a0') in 0.014771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_35.asset
+  artifactKey: Guid(f543410e14333a74ab3f545cd91787ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_35.asset using Guid(f543410e14333a74ab3f545cd91787ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf15673021c25dad8c2bb01a53708e2') in 0.016574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_32.asset
+  artifactKey: Guid(94ba100d4deb116458d1407c9b323168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_32.asset using Guid(94ba100d4deb116458d1407c9b323168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651a8ece1456f7583a8fb6a928f42461') in 0.014293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_38.asset
+  artifactKey: Guid(cff21da93c95d7749aab24d6718922cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_38.asset using Guid(cff21da93c95d7749aab24d6718922cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffdb1269c3867fe40d64eafe409a617f') in 0.014865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_36.asset
+  artifactKey: Guid(cfef3b35a08487c47816c82778678317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_36.asset using Guid(cfef3b35a08487c47816c82778678317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2191a493abd218e87b1a3f341ce05ab9') in 0.015462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_31.asset
+  artifactKey: Guid(f9e2c9d5c9fa4ec47b0830a69395fbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_31.asset using Guid(f9e2c9d5c9fa4ec47b0830a69395fbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58eabba98f9355202844d8dbce70ecfe') in 0.016409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_25.asset
+  artifactKey: Guid(d7cf7177f04aa7347a3dd37900495bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_25.asset using Guid(d7cf7177f04aa7347a3dd37900495bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3891268a446ffee4894712a55218e24') in 0.013152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.641882 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_45.asset
+  artifactKey: Guid(f8aa754ae6ed570489dcce92235255ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_45.asset using Guid(f8aa754ae6ed570489dcce92235255ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e246149c20b5f28eae22bd516115abaa') in 0.009246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_53.asset
+  artifactKey: Guid(0c63388d6aa3a8b4c802106c16e68c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_53.asset using Guid(0c63388d6aa3a8b4c802106c16e68c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36be883abfc3fe7657e23b394a26a218') in 0.016763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_51.asset
+  artifactKey: Guid(68bbb39c265e24c44a84074988af8381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_51.asset using Guid(68bbb39c265e24c44a84074988af8381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd804db6f8a14c78db25ab64c485ca077') in 0.021694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_54.asset
+  artifactKey: Guid(a0b22193e8989d94aa957055b525581c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_54.asset using Guid(a0b22193e8989d94aa957055b525581c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15a479b1460c125cd1ab09f497dc07a') in 0.015711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_46.asset
+  artifactKey: Guid(7bb437e7af0d9f6438795af902c132cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_46.asset using Guid(7bb437e7af0d9f6438795af902c132cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bce80b610bbed29116aba844880f9a9') in 0.013072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_60.asset
+  artifactKey: Guid(c02e2a54c8197504ca7c740653bc4034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_60.asset using Guid(c02e2a54c8197504ca7c740653bc4034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c578deafea00b8b3c2b6b9480f00627e') in 0.016784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001198 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_64.asset
+  artifactKey: Guid(ddd7365a91407be48807577c5bf2feb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_64.asset using Guid(ddd7365a91407be48807577c5bf2feb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f915cbe42bc4854a1410c5c45d4ffb02') in 0.013699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_62.asset
+  artifactKey: Guid(fb15ef681cc111d43bd613b34ff366dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_62.asset using Guid(fb15ef681cc111d43bd613b34ff366dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2a3008c647f2c0ac0331ce820b72d8') in 0.016266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_50.asset
+  artifactKey: Guid(e5c65d029869a0c44838597c00675214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_50.asset using Guid(e5c65d029869a0c44838597c00675214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ca2506cfc4ed2364db00cf3f6e1f58') in 0.018818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_48.asset
+  artifactKey: Guid(13bd11cd0856c774db24d9c2337152b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_48.asset using Guid(13bd11cd0856c774db24d9c2337152b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4f32415f1ed9997957b2ea8472792f') in 0.019109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_57.asset
+  artifactKey: Guid(4ca8b0d62ee2f5748b2f11c283721cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_57.asset using Guid(4ca8b0d62ee2f5748b2f11c283721cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeee97171d6dd094cc684ed947cc2447') in 0.021094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_63.asset
+  artifactKey: Guid(cbbfba862110ef946bf5330bdf8c6ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_63.asset using Guid(cbbfba862110ef946bf5330bdf8c6ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa45de7fa51fc9ddc6daccb0855a6aa9') in 0.018680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_61.asset
+  artifactKey: Guid(5ddaf57765fbe4c45a298542b0c7a997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_61.asset using Guid(5ddaf57765fbe4c45a298542b0c7a997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c23e914fb66a1ab142ac122ddcacd4') in 0.017472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_56.asset
+  artifactKey: Guid(b388c421d475ba54a845a3228d9b2f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_56.asset using Guid(b388c421d475ba54a845a3228d9b2f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735e94f28fcea3389008b9e271ecb318') in 0.018211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_47.asset
+  artifactKey: Guid(7336ecd2db5af8a42903a09d43457657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_47.asset using Guid(7336ecd2db5af8a42903a09d43457657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5116c404acd1a0d3e92ec30b169136e3') in 0.021551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc726514a37eb02597007126bbce0849') in 0.171807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_59.asset
+  artifactKey: Guid(72a4f7aa4e63f2a4fb95b0242bfa89ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_59.asset using Guid(72a4f7aa4e63f2a4fb95b0242bfa89ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2dc41fdb9e5631b67c9c2076a633c0') in 0.013729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_58.asset
+  artifactKey: Guid(998f0fad067c6534087009c10e049d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_58.asset using Guid(998f0fad067c6534087009c10e049d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc91c426565b34d71f34020ea0caeda') in 0.018683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_65.asset
+  artifactKey: Guid(aee594a3b684a9942bb506144a4c7bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_65.asset using Guid(aee594a3b684a9942bb506144a4c7bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '215671fada2b54a4f338f726b5f1cd4f') in 0.015689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_52.asset
+  artifactKey: Guid(7e742a403f7379c40819bc9fcfe441c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_52.asset using Guid(7e742a403f7379c40819bc9fcfe441c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ff54803194ef8e6914fb184d09189e') in 0.014982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_66.asset
+  artifactKey: Guid(88677a7ad5588b8468758e3ac6f4b6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_66.asset using Guid(88677a7ad5588b8468758e3ac6f4b6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0041be985078aca509dd19b1c79d5e3') in 0.018926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_55.asset
+  artifactKey: Guid(6f1bf10bbe211504b848e69372243ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_55.asset using Guid(6f1bf10bbe211504b848e69372243ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5647db85e201fdc9f6beeb7b76ea912') in 0.018836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias project tileset_49.asset
+  artifactKey: Guid(919ee5c4a7cdda242afc41f7630c8cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias project tileset_49.asset using Guid(919ee5c4a7cdda242afc41f7630c8cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd388e38f135c9d0abbdd849cb5ae21') in 0.016432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.717975 seconds.
+  path: Assets/Thobias PreFabs/Floor Individual (15).prefab
+  artifactKey: Guid(2bf5f3cd5b0d32245a8228e676e6d0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias PreFabs/Floor Individual (15).prefab using Guid(2bf5f3cd5b0d32245a8228e676e6d0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49174b348b47de2391288e17ffa72f8') in 0.041270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Thobias PreFabs/Gun_Base.prefab
+  artifactKey: Guid(5b6318768b0782442bf387dc7ec39414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias PreFabs/Gun_Base.prefab using Guid(5b6318768b0782442bf387dc7ec39414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84519a2ed667f03a5b0f6af9a5a7fcb') in 0.016044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Thobias PreFabs/iEnemy.prefab
+  artifactKey: Guid(a190edfab3a314b48a611ee84ac882c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias PreFabs/iEnemy.prefab using Guid(a190edfab3a314b48a611ee84ac882c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ab66ceeb58e01cd8cec0905f99f6ef') in 0.087399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.072351 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10469c5f720365e2c53646284544f9f7') in 0.104873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.873330 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ce2b09596fc3114779522ff5c66a98') in 0.114902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.798224 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b50ef38fa048dcbb5749e0c21dbaecb') in 0.049458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.357127 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07a12d3ffb9b45dca666e24622e31b1') in 0.060281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.736473 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d96911fffb111c43e9291d9fe15e9e') in 0.083279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.505043 seconds.
+  path: Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab
+  artifactKey: Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Thobias Sprites/Tilemap/Thobias Tiles.prefab using Guid(4e64646a7ba6cab4b97e15b4aa9521b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196669cf9ed66d857b3e70cd7189b6ce') in 0.063774 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
