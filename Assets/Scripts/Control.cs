@@ -13,10 +13,11 @@ public class Control : MonoBehaviour
     public ParticleSystem fire;
     void Start()
     {
-
+        //RedGreenLight.teste = false;
     }
     void Update()
     {
+
         xmov = Input.GetAxis("Horizontal");
 
         if (Input.GetButton("Jump"))
@@ -155,6 +156,16 @@ public class Control : MonoBehaviour
             SimpleFollow.instance.HitAnimation();
         }
     }
+
+    private void OnTriggerEnter2D(Collision2D collision)
+    {
+        Debug.Log("Trigger!");
+       // if (collision.collider.CompareTag("RedGreenLight") /*&& GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Thobias_Shoot 2")*/) // no caso, trocar o "atirando" para "dando dash"
+       // {//.gameObject em vez de .collider?
+       //     RedGreenLight.teste = true; //pq não está funcionando????
+       // }
+    }
+
     private void OnParticleCollision(GameObject other)
     {
         if (other.gameObject.CompareTag("EnemyShot"))
