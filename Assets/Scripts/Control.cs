@@ -31,7 +31,8 @@ public class Control : MonoBehaviour
             jumptimeside = 0;
         }
         
-        
+
+
         anima.SetBool("Fire", false);
 
         if (Input.GetButtonDown("Fire1"))
