@@ -158,7 +158,7 @@ public class Control : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Trigger!");
        // if (collision.collider.CompareTag("RedGreenLight") /*&& GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Thobias_Shoot 2")*/) // no caso, trocar o "atirando" para "dando dash"
