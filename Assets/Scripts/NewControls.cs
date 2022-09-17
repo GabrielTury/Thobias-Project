@@ -53,11 +53,11 @@ public class NewControls : MonoBehaviour
         {
             lastOnGroundTime = 0;
         }
-        if (lastOnGroundTime == 0)
+        if (lastOnGroundTime > -0.3f)
         {
             isJumping = false;
         }
-        else if (lastOnGroundTime < 0.01f)
+        else if (lastOnGroundTime < -0.3f)
         {
             isJumping = true;
         }
@@ -68,8 +68,7 @@ public class NewControls : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            fire.Emit(1);
-            anima.SetBool("Fire", true);
+            StartCoroutine(Shoot());
         }
         #endregion
     }
@@ -90,10 +89,10 @@ public class NewControls : MonoBehaviour
 
     void Run()
     {
-        if (moveInput != scale.x)
+        if (Mathf.Sign(moveInput) != Mathf.Sign(scale.x))
         {
             ChangeDirection();
-            
+            print(moveInput);
         }
 
         rig.AddForce(moveForce * Vector2.right * Mathf.Sign(moveInput), ForceMode2D.Force);
@@ -109,17 +108,27 @@ public class NewControls : MonoBehaviour
     }
     void Jump()
     {
-        print(isJumping);
         if (!isJumping)
         {
             rig.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
+            isJumping = true;
         }
     }
     void ChangeDirection()
     {
         scale = transform.localScale;
-        scale.x = moveInput;
+        scale.x = 1.5f*moveInput;
         transform.localScale = scale;
+    }
+
+    IEnumerator Shoot()
+    {
+        while (Input.GetButton("Fire1"))
+        {
+            fire.Emit(1);
+            anima.SetBool("Fire", true);
+            yield return new WaitForSeconds(1);
+        }
     }
     private void OnDrawGizmos()
     {
