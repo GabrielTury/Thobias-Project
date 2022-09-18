@@ -92,7 +92,7 @@ public class NewControls : MonoBehaviour
         if (Mathf.Sign(moveInput) != Mathf.Sign(scale.x))
         {
             ChangeDirection();
-            print(moveInput);
+            //print(moveInput);
         }
 
         rig.AddForce(moveForce * Vector2.right * Mathf.Sign(moveInput), ForceMode2D.Force);
@@ -146,11 +146,10 @@ public class NewControls : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger!");
-        // if (collision.collider.CompareTag("RedGreenLight") /*&& GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Thobias_Shoot 2")*/) // no caso, trocar o "atirando" para "dando dash"
-        // {//.gameObject em vez de .collider?
-        //     RedGreenLight.teste = true; //pq não está funcionando????
-        // }
+        if (collision.CompareTag("RedGreenLight") && anima.GetCurrentAnimatorStateInfo(0).IsName("Thobias Run")) // no caso, trocar o "Thobias Run" para "dando dash"
+        {
+            RedGreenLight.activateItWasDashedRGLFunction = true;
+        }
     }
 
     private void OnParticleCollision(GameObject other)

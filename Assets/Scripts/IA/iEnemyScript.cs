@@ -148,7 +148,7 @@ public class iEnemyScript : MonoBehaviour
                 animator.SetBool("ATTACKING", false);
                 animator.SetBool("DYING", true);
             }
-            stillIdle = true;
+                stillIdle = true;
         }
         else
         {
@@ -177,14 +177,6 @@ public class iEnemyScript : MonoBehaviour
 }
 
 /*
-
-- Entender pq o iEnemy está fazendo a animação rápida;
-
-- Adicionar "dash" no Player (só se a dificuldade do tópico acima não for resolvida);
-
-- fazer com que o raio que o inimigo nota o player fique para trás e para frente assim que notar,
-e antes de notar fique com o raio só para frente;
-
 
 
 Códigos:

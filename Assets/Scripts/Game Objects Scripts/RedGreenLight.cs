@@ -4,28 +4,59 @@ using UnityEngine;
 
 public class RedGreenLight : MonoBehaviour
 {
-    public int LightNumber;
-    Animator animator;
+    public int intLightNumber;
+    int lastLightNumber = 1;
+    Animator anim;
 
-    public static bool teste;
+    public static bool activateItWasDashedRGLFunction = false;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-      /*  if (teste == false)
-            Debug.Log("tá falso");
-        if (teste)
-            Debug.Log("tá verdadeiro");*/
+
     }
- /*   private void OnTriggerEnter2D(Collision2D collision)
+
+    private void FixedUpdate()
     {
-        if (collision.collider.CompareTag("Player"))
+        LightNumberFunction();
+
+        if (activateItWasDashedRGLFunction)
         {
-            teste = true;
+            ItWasDashed();
         }
-    }*/
+    }
+
+    public void ItWasDashed()
+    {
+        /* if (intLightNumber == lastLightNumber)
+         {
+             anim.SetBool("GreenLight", true);
+             lastLightNumber++;
+        print(lastLightNumber);
+         }*/
+
+        anim.SetBool("GreenLight", true);
+
+        //activateItWasDashedRGLFunction = false; //isso tava bugando quando ficava verde, por isso tirei
+        //Debug.Log("ItWasDashed");
+    }
+
+    private void LightNumberFunction()
+    {
+
+        for (int i = 1; i <= 5; i++)
+        {
+            if (intLightNumber == i)
+            {
+                anim.SetInteger("LightNumberAnimator", i);
+            }
+        }
+
+    }
 }
+
+//Fazer no final de tudo a porta abrir (colocar as condições para cada porta)
