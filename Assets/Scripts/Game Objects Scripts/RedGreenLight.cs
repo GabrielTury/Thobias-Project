@@ -39,6 +39,7 @@ public class RedGreenLight : MonoBehaviour
         print(lastLightNumber);
          }*/
 
+        //gameObject.GetComponent<Animator>().SetBool("GreenLight", true);
         anim.SetBool("GreenLight", true);
 
         //activateItWasDashedRGLFunction = false; //isso tava bugando quando ficava verde, por isso tirei
@@ -48,13 +49,13 @@ public class RedGreenLight : MonoBehaviour
     private void LightNumberFunction()
     {
 
-        for (int i = 1; i <= 5; i++)
+        /*for (int i = 1; i <= 5; i++)
         {
             if (intLightNumber == i)
             {
                 anim.SetInteger("LightNumberAnimator", i);
             }
-        }
+        }*/
 
     }
 }
