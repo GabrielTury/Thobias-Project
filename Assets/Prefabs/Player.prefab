@@ -9855,7 +9855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 0
   maxSpeed: 4
-  initialMoveForce: 3
+  initialMoveForce: 4
+  breakForce: 5
   anima: {fileID: 95530863979618488}
   fire: {fileID: 198825090059282404}
   groundCheckPoint: {fileID: 6154261168908325890}

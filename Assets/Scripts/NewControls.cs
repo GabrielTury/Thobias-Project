@@ -12,6 +12,7 @@ public class NewControls : MonoBehaviour
     public float maxSpeed;
     public float initialMoveForce;
     Vector2 scale;
+    public float breakForce;
     #endregion
 
     #region Stuff
@@ -84,15 +85,15 @@ public class NewControls : MonoBehaviour
 
     private void Break()
     {
-        rig.AddForce(moveForce * Vector2.right * Mathf.Sign(-rig.velocity.x), ForceMode2D.Force);
+        rig.AddForce(breakForce * Vector2.right * Mathf.Sign(-rig.velocity.x), ForceMode2D.Force);
     }
 
+    #region RUN
     void Run()
     {
         if (Mathf.Sign(moveInput) != Mathf.Sign(scale.x))
         {
             ChangeDirection();
-            //print(moveInput);
         }
 
         rig.AddForce(moveForce * Vector2.right * Mathf.Sign(moveInput), ForceMode2D.Force);
@@ -106,6 +107,8 @@ public class NewControls : MonoBehaviour
             moveForce = initialMoveForce;
         }
     }
+    #endregion
+
     void Jump()
     {
         if (!isJumping)
