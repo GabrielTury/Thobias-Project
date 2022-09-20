@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
 
-    public static LevelManager instance;
-    public SpriteRenderer lifebar;
+    public Slider slider;
+
+    public static LevelManager instance;    
     public float life = 1;
     public GameObject respawn;
     public GameObject playerprefab;
@@ -19,8 +21,8 @@ public class LevelManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-        lifebar.size = new Vector2(life * 2.17f, 0.8f);
+	void Update () {       
+        slider.value = life;
         if (!playerinstance)
         {
             CreatePlayer();
