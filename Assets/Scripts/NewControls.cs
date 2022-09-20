@@ -7,6 +7,7 @@ public class NewControls : MonoBehaviour
 
     Rigidbody2D rig;
     #region Move Variables
+    private float verticalInput;
     private float moveInput;
     [HideInInspector] public float moveForce;
     public float maxSpeed;
@@ -33,6 +34,16 @@ public class NewControls : MonoBehaviour
     private bool isJumping;
 
     #endregion
+
+    #region Dash Variables
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 6f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
+    private float dashingPowerUp = 8f;
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,8 +53,14 @@ public class NewControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         lastOnGroundTime -= Time.deltaTime;
         moveInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
 
         #region JUMP INPUTS
         if (Input.GetButtonDown("Jump"))
@@ -72,9 +89,19 @@ public class NewControls : MonoBehaviour
             StartCoroutine(Shoot());
         }
         #endregion
+
+        if(Input.GetKeyDown(KeyCode.LeftShift) &&canDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
     private void FixedUpdate()
     {
+        if(isDashing)
+        {
+            return;
+        }
+        
         anima.SetFloat("Velocity", Mathf.Abs(moveInput));
 
         if (moveInput != 0)
@@ -162,4 +189,37 @@ public class NewControls : MonoBehaviour
             LevelManager.instance.LowDamage();
         }
     }
-}
+
+    #region DASH
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rig.gravityScale;
+        rig.gravityScale = 0f;
+        rig.velocity = Vector3.zero;
+        if (moveInput == 0 && verticalInput == 1)
+        {
+            rig.AddForce(new Vector2(0, 1) * dashingPowerUp, ForceMode2D.Impulse);
+        }
+        if (moveInput == 1 && verticalInput == 1)
+        {
+            rig.AddForce(new Vector2(1, 1) * dashingPowerUp, ForceMode2D.Impulse);
+        }
+        if (moveInput == -1 && verticalInput == 1)
+        {
+            rig.AddForce(new Vector2(-1, 1) * dashingPowerUp, ForceMode2D.Impulse);
+        }
+        else
+        {
+            rig.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        }
+        yield return new WaitForSeconds(dashingTime);
+        rig.AddForce(breakForce * Vector2.right * Mathf.Sign(-rig.velocity.x), ForceMode2D.Force);
+        rig.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
+    #endregion
+} 
