@@ -90,7 +90,7 @@ public class NewControls : MonoBehaviour
         }
         #endregion
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) &&canDash)
+        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
         }
@@ -107,7 +107,7 @@ public class NewControls : MonoBehaviour
         if (moveInput != 0)
             Run();
         else if (Mathf.Abs(rig.velocity.x) != 0)
-            Break();
+            Break();       
     }
 
     private void Break()
@@ -195,6 +195,7 @@ public class NewControls : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        //Ignorar o collider
         float originalGravity = rig.gravityScale;
         rig.gravityScale = 0f;
         rig.velocity = Vector3.zero;
@@ -202,15 +203,15 @@ public class NewControls : MonoBehaviour
         {
             rig.AddForce(new Vector2(0, 1) * dashingPowerUp, ForceMode2D.Impulse);
         }
-        if (moveInput == 1 && verticalInput == 1)
+        else if (moveInput == 1 && verticalInput == 1)
         {
             rig.AddForce(new Vector2(1, 1) * dashingPowerUp, ForceMode2D.Impulse);
         }
-        if (moveInput == -1 && verticalInput == 1)
+        else if (moveInput == -1 && verticalInput == 1)
         {
             rig.AddForce(new Vector2(-1, 1) * dashingPowerUp, ForceMode2D.Impulse);
         }
-        else
+        else if(moveInput !=0)
         {
             rig.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         }
@@ -218,6 +219,7 @@ public class NewControls : MonoBehaviour
         rig.AddForce(breakForce * Vector2.right * Mathf.Sign(-rig.velocity.x), ForceMode2D.Force);
         rig.gravityScale = originalGravity;
         isDashing = false;
+        //Não Ignorar o collider
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
