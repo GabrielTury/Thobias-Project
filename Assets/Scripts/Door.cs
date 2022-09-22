@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField] Transform target;
+    public GameObject Teste;
+
     private void OnParticleCollision(GameObject other)
     {
         StartCoroutine(OpenTheSesame());
     }
 
-    [SerializeField] Transform target;
+   /* private void OpenDoor()
+    {
+        if (gameObject.GetComponent<RedGreenLight>().lastLightNumber == 6) //quero pegar o int do outro script
+        {
+
+        }
+    }*/
+
     IEnumerator OpenTheSesame()
     {
         while (transform.position != target.position)

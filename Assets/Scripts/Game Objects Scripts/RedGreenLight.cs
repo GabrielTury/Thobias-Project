@@ -5,7 +5,7 @@ using UnityEngine;
 public class RedGreenLight : MonoBehaviour
 {
     public int intLightNumber;
-    static int lastLightNumber = 1; //o "static" usa o mesmo valor da variável para todos os scripts com esse nome (no caso, "RedGreenLight").
+    public static int lastLightNumber = 1; //o "static" usa o mesmo valor da variável para todos os scripts com esse nome (no caso, "RedGreenLight").
     //"public static" acaba fazendo essa variável acessível para todos os scripts, além de mudar o valor da variável para os scripts com o mesmo nome.
     Animator anim;
 
@@ -22,6 +22,7 @@ public class RedGreenLight : MonoBehaviour
     private void FixedUpdate()
     {
         LightNumberFunction();
+        LightDoorOpen();
     }
 
     public void ItWasDashed()
@@ -35,7 +36,6 @@ public class RedGreenLight : MonoBehaviour
 
     private void LightNumberFunction()
     {
-
         for (int i = 1; i <= 5; i++)
         {
             if (intLightNumber == i)
@@ -43,8 +43,16 @@ public class RedGreenLight : MonoBehaviour
                 anim.SetInteger("LightNumberAnimator", i);
             }
         }
-
     }
+
+    public void LightDoorOpen()
+    {
+        if (lastLightNumber == 6)
+        {
+            lastLightNumber = 1;
+        }
+    }
+
 }
 
 //Fazer no final de tudo a porta abrir (colocar as condições para cada porta)
