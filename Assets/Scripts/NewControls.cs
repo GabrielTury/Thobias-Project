@@ -176,9 +176,9 @@ public class NewControls : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("RedGreenLight") && anima.GetCurrentAnimatorStateInfo(0).IsName("Thobias Run")) // no caso, trocar o "Thobias Run" para "dando dash"
+        if (collision.CompareTag("RedGreenLight") && isDashing)//depois, trocar o isDashing pela animação [ anima.GetCurrentAnimatorStateInfo(0).IsName("Thobias Dashing ou algo assim") ]
         {
-            RedGreenLight.activateItWasDashedRGLFunction = true;
+            collision.gameObject.GetComponent<RedGreenLight>().ItWasDashed();
         }
     }
 
