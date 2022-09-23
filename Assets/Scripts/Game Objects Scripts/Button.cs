@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    [SerializeField] bool checkForCollisionOnly;//se estiver falso, vai checar se o Player passou por cima
+    [SerializeField] bool checkForProjectileOnly;//se estiver falso, vai checar se o Player passou por cima
     [NonSerialized] public bool enableButtonCollision;
     Animator anima;
     Door door;
@@ -23,7 +23,7 @@ public class Button : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        if (enableButtonCollision && checkForCollisionOnly)
+        if (enableButtonCollision && checkForProjectileOnly)
         {
             anima.SetBool("ButtonDownAnimator", true);
             door.buttonOpenDoor = true;
@@ -32,7 +32,7 @@ public class Button : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       if (collision.collider.CompareTag("Player") && (checkForCollisionOnly == false))
+       if (collision.collider.CompareTag("Player") && (checkForProjectileOnly == false))
        {
          anima.SetBool("ButtonDownAnimator", true);
        }
