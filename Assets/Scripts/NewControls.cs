@@ -19,10 +19,13 @@ public class NewControls : MonoBehaviour
     #region Stuff
     public Animator anima;
     public ParticleSystem fire;
+    Collider m_Collider;
     #endregion
 
     #region Check Variables
     [SerializeField] Transform groundCheckPoint;
+    [SerializeField] Transform frontCheck;
+    [SerializeField] Vector2 frontCheckSize;
     [SerializeField] Vector2 groundCheckSize;
     [SerializeField] LayerMask groundLayer;
     private float lastOnGroundTime;
@@ -45,15 +48,33 @@ public class NewControls : MonoBehaviour
     private float dashingPowerUp = 8f;
     #endregion
 
+    #region WallJump Variables
+    bool isTouchingFront;
+    bool isGrounded;
+    bool wallSliding;
+    public float wallSlidingSpeed;
+    bool wallJumping;
+    public float xWallForce;
+    public float yWallForce;
+    public float wallJumpTime;
+
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        m_Collider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isDashing)
+        {
+            m_Collider.enabled = !m_Collider.enabled;
+        }
+        
         if (isDashing)
         {
             return;
@@ -90,7 +111,43 @@ public class NewControls : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+        #region WALLSLIDE
+
+        isTouchingFront = Physics2D.OverlapBox(frontCheck.position, frontCheckSize, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0, groundLayer);
+
+        if (isTouchingFront == true && isGrounded == false && moveInput !=0)
+        {
+            wallSliding = true;
+        }
+        else
+        {
+            wallSliding = false;
+        }
+
+        if (wallSliding)
+        {
+            rig.velocity = new Vector2(rig.velocity.x, Mathf.Clamp(rig.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && wallSliding == true)
+        {
+            wallJumping = true;
+            Invoke("SetWallJumpingToFalse", wallJumpTime);
+        }
+
+        if (wallJumping == true)
+        {
+            rig.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
+        }
+        #endregion
     }
+
+    void SetWallJumpingToFalse ()
+    {
+        wallJumping = false;
+    }
+
     private void FixedUpdate()
     {
         if(isDashing)
@@ -160,6 +217,8 @@ public class NewControls : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(groundCheckPoint.position, 0.2f);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(frontCheck.position, frontCheckSize);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -191,7 +250,6 @@ public class NewControls : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
-        //Ignorar o collider
         float originalGravity = rig.gravityScale;
         rig.gravityScale = 0f;
         rig.velocity = Vector3.zero;
