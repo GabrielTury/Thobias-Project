@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,27 +6,77 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [SerializeField] Transform target;
-    public GameObject Teste;
 
-    private void OnParticleCollision(GameObject other)
+    [NonSerialized] public bool lightOpenDoor, keyOpenDoor, buttonOpenDoor;
+
+    public bool checkForLight;
+    public bool checkForKey;
+    public bool checkForButton;
+
+    Button button;
+    public GameObject whichButton;
+
+    void Awake()
     {
-        StartCoroutine(OpenTheSesame());
+        button = whichButton.GetComponent<Button>();
+    }
+    void Update()
+    {
+        OpenDoor();
     }
 
-   /* private void OpenDoor()
+
+    public void OpenDoor()
     {
-        if (gameObject.GetComponent<RedGreenLight>().lastLightNumber == 6) //quero pegar o int do outro script
+        if (checkForLight && lightOpenDoor && checkForKey && keyOpenDoor)
         {
-
+            if (checkForButton)
+            {
+                button.enableButtonCollision = true;
+            }
+            else if (checkForButton == false)
+                StartCoroutine(OpenTheSesame());
         }
-    }*/
 
-    IEnumerator OpenTheSesame()
+        if (checkForLight && lightOpenDoor && checkForKey == false)
+        {
+            if (checkForButton)
+            {
+                button.enableButtonCollision = true;
+            }
+            else if (checkForButton == false)
+                StartCoroutine(OpenTheSesame());
+        }
+
+        if (checkForKey && keyOpenDoor && checkForLight == false)
+        {
+            if (checkForButton)
+            {
+                button.enableButtonCollision = true;
+            }
+            else if (checkForButton == false)
+                StartCoroutine(OpenTheSesame());
+        }
+
+        if (checkForButton && checkForKey == false && checkForLight == false)
+        {
+            button.enableButtonCollision = true;
+        }
+
+        if (button.enableButtonCollision && button.GetComponent<Animator>().GetBool("ButtonDownAnimator"))
+            buttonOpenDoor = true;
+
+        if (buttonOpenDoor == true)
+            StartCoroutine(OpenTheSesame());
+
+    }
+
+    public IEnumerator OpenTheSesame()
     {
         while (transform.position != target.position)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, 0.01f);
-            yield return new WaitForSeconds(0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, 0.5f);
+            yield return new WaitForSeconds(0.5f);
         }
         gameObject.GetComponent<Collider2D>().enabled = false;
     }

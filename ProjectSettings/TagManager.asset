@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - EnemyShot
   - RedGreenLight
+  - Key
+  - Button
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,15 @@ public class RedGreenLight : MonoBehaviour
     //"public static" acaba fazendo essa variável acessível para todos os scripts, além de mudar o valor da variável para os scripts com o mesmo nome.
     Animator anim;
 
-    void Start()
+    Door door;
+    public GameObject thisDoor;
+
+    void Awake()
+    {
+        door = thisDoor.GetComponent<Door>();
+    }
+
+        void Start()
     {
         anim = GetComponent<Animator>();
     }
@@ -50,9 +58,7 @@ public class RedGreenLight : MonoBehaviour
         if (lastLightNumber == 6)
         {
             lastLightNumber = 1;
+            door.lightOpenDoor = true;
         }
     }
-
 }
-
-//Fazer no final de tudo a porta abrir (colocar as condições para cada porta)
