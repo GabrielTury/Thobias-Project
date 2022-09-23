@@ -9838,8 +9838,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.44}
-  m_Size: {x: 0.43, y: 0.74}
+  m_Offset: {x: 0, y: 0.4780826}
+  m_Size: {x: 0.43, y: 0.92748344}
   m_Direction: 0
 --- !u!114 &-1762143350867154895
 MonoBehaviour:
@@ -9856,7 +9856,7 @@ MonoBehaviour:
   moveForce: 0
   maxSpeed: 4
   initialMoveForce: 4
-  breakForce: 5
+  breakForce: 10
   anima: {fileID: 95530863979618488}
   fire: {fileID: 198825090059282404}
   groundCheckPoint: {fileID: 6154261168908325890}
@@ -9864,6 +9864,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  coyoteTime: 0.3
   jumpForce: 10
 --- !u!1 &5551740834961089675
 GameObject:
@@ -9889,7 +9890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5551740834961089675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006, y: 0.083, z: -3.0176048}
+  m_LocalPosition: {x: -0.003, y: 0.143, z: -3.0176048}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4664568246221834}

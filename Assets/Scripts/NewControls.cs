@@ -26,6 +26,7 @@ public class NewControls : MonoBehaviour
     [SerializeField] Vector2 groundCheckSize;
     [SerializeField] LayerMask groundLayer;
     private float lastOnGroundTime;
+    public float coyoteTime = 0.3f;
 
     #endregion
 
@@ -58,7 +59,6 @@ public class NewControls : MonoBehaviour
             return;
         }
 
-        lastOnGroundTime -= Time.deltaTime;
         moveInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
@@ -67,17 +67,13 @@ public class NewControls : MonoBehaviour
         {
             Jump();
         }
-        if (Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0, groundLayer)) //checks if set box overlaps with ground
-        {
-            lastOnGroundTime = 0;
+        if (Physics2D.OverlapCircle(groundCheckPoint.position,0.2f , groundLayer)) 
+        { 
+            lastOnGroundTime = coyoteTime;
         }
-        if (lastOnGroundTime > -0.3f)
+        else
         {
-            isJumping = false;
-        }
-        else if (lastOnGroundTime < -0.3f)
-        {
-            isJumping = true;
+            lastOnGroundTime -= Time.deltaTime;
         }
         #endregion
 
@@ -138,10 +134,10 @@ public class NewControls : MonoBehaviour
 
     void Jump()
     {
-        if (!isJumping)
+        if (lastOnGroundTime > 0f)
         {
             rig.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
-            isJumping = true;
+            lastOnGroundTime = 0f;
         }
     }
     void ChangeDirection()
@@ -163,7 +159,7 @@ public class NewControls : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(groundCheckPoint.position, groundCheckSize);
+        Gizmos.DrawSphere(groundCheckPoint.position, 0.2f);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
