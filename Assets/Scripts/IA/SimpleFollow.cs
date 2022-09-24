@@ -28,18 +28,13 @@ public class SimpleFollow : MonoBehaviour
         if(inRange != null)
         {
             target = inRange.gameObject;
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position+new Vector3(0,(float)0.5,0),speed);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position + new Vector3(0,1f,0),speed);
         }
     }
     // Update is called once per frame
     void FixedUpdate()
     {
         CheckRange();
-        /*if (target)
-        {
-            Vector3 dif = target.transform.position - transform.position;
-            rdb.AddForce(dif);
-        }*/
     }
     private void OnDrawGizmos()
     {
@@ -62,20 +57,4 @@ public class SimpleFollow : MonoBehaviour
     {
         anima.SetTrigger("Hit");
     }
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-            target = collision.gameObject;
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-            target = null;
-        }
-    }*/
 }

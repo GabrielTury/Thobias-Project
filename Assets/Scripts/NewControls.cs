@@ -19,7 +19,7 @@ public class NewControls : MonoBehaviour
     #region Stuff
     public Animator anima;
     public ParticleSystem fire;
-    Collider m_Collider;
+    //Collider2D m_Collider;
     #endregion
 
     #region Check Variables
@@ -50,7 +50,6 @@ public class NewControls : MonoBehaviour
 
     #region WallJump Variables
     bool isTouchingFront;
-    bool isGrounded;
     bool wallSliding;
     public float wallSlidingSpeed;
     bool wallJumping;
@@ -64,16 +63,16 @@ public class NewControls : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        m_Collider = GetComponent<Collider>();
+        //m_Collider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isDashing)
+        /*if(isDashing)
         {
             m_Collider.enabled = !m_Collider.enabled;
-        }
+        }*/
         
         if (isDashing)
         {
@@ -88,7 +87,7 @@ public class NewControls : MonoBehaviour
         {
             Jump();
         }
-        if (Physics2D.OverlapCircle(groundCheckPoint.position,0.2f , groundLayer)) 
+        if (IsGrounded()) 
         { 
             lastOnGroundTime = coyoteTime;
         }
@@ -113,10 +112,9 @@ public class NewControls : MonoBehaviour
         }
         #region WALLSLIDE
 
-        isTouchingFront = Physics2D.OverlapBox(frontCheck.position, frontCheckSize, groundLayer);
-        isGrounded = Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0, groundLayer);
+        /*isTouchingFront = Physics2D.OverlapBox(frontCheck.position, frontCheckSize, groundLayer);
 
-        if (isTouchingFront == true && isGrounded == false && moveInput !=0)
+        if (isTouchingFront == true && IsGrounded() == false && moveInput !=0)
         {
             wallSliding = true;
         }
@@ -139,8 +137,13 @@ public class NewControls : MonoBehaviour
         if (wallJumping == true)
         {
             rig.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
-        }
+        }*/
         #endregion
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheckPoint.position, 0.2f, groundLayer);
     }
 
     void SetWallJumpingToFalse ()
@@ -189,14 +192,25 @@ public class NewControls : MonoBehaviour
     }
     #endregion
 
+    #region JUMP
     void Jump()
     {
-        if (lastOnGroundTime > 0f)
+        if (lastOnGroundTime > 0f && !isJumping)
         {
             rig.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
             lastOnGroundTime = 0f;
+            StartCoroutine(JumpCooldown());
         }
     }
+
+    IEnumerator JumpCooldown()
+    {
+        isJumping = true;
+        yield return new WaitForSeconds(0.35f);
+        isJumping = false;
+
+    }
+    #endregion
     void ChangeDirection()
     {
         scale = transform.localScale;

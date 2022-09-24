@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
 
-   //public Slider slider;
+   public Slider slider;
 
     public static LevelManager instance;    
     public float life = 1;
@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {       
-        //slider.value = life;
+        slider.value = life;
         if (!playerinstance)
         {
             CreatePlayer();
