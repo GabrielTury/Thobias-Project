@@ -30,6 +30,7 @@ public class NewControls : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     private float lastOnGroundTime;
     public float coyoteTime = 0.3f;
+    private bool isShooting;
 
     #endregion
 
@@ -100,16 +101,19 @@ public class NewControls : MonoBehaviour
         #region SHOOT
         anima.SetBool("Fire", false);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !isShooting)
         {
             StartCoroutine(Shoot());
         }
         #endregion
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        #region Dash Inputs
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
         }
+        #endregion
+
         #region WALLSLIDE
 
         /*isTouchingFront = Physics2D.OverlapBox(frontCheck.position, frontCheckSize, groundLayer);
@@ -216,16 +220,24 @@ public class NewControls : MonoBehaviour
         scale = transform.localScale;
         scale.x = 1.5f*moveInput;
         transform.localScale = scale;
+        float actualVelocity;
+        actualVelocity = rig.velocity.x;
+        print(actualVelocity);
+        actualVelocity *= -0.3f;
+        print(actualVelocity);
+        rig.velocity = new Vector2(actualVelocity, rig.velocity.y);
     }
 
     IEnumerator Shoot()
     {
+        isShooting = true;
         while (Input.GetButton("Fire1"))
         {
             fire.Emit(1);
             anima.SetBool("Fire", true);
             yield return new WaitForSeconds(1);
         }
+        isShooting = false;
     }
     private void OnDrawGizmos()
     {
