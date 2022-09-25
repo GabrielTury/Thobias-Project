@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 3667990151770316213}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 274089e87abdfad4084ab9f15d4bc5ef, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1e31141b3c21d344dbfabf53dca46494, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intLightNumber: 0
+  thisDoor: {fileID: 0}
 --- !u!58 &3667990151770316218
 CircleCollider2D:
   m_ObjectHideFlags: 0
