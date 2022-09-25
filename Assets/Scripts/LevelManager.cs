@@ -44,6 +44,7 @@ public class LevelManager : MonoBehaviour {
     public void LowDamage()
     {
         life -= 0.1f;
+        NewControls.instance.GotHit();
         life = Mathf.Clamp01(life);
         if (life <= 0.01f)
         {
@@ -56,6 +57,7 @@ public class LevelManager : MonoBehaviour {
     public void TouchDamage()
     {
         life -= iEnemyScript.instance.touchDamageValue;
+        NewControls.instance.GotHit();
         life = Mathf.Clamp01(life);
         if (life <= 0.01f)
         {
@@ -68,6 +70,7 @@ public class LevelManager : MonoBehaviour {
     public void AttackDamage()
     {
         life -= iEnemyScript.instance.atackDamageValue;
+        NewControls.instance.GotHit();
         life = Mathf.Clamp01(life);
         if (life <= 0.01f)
         {

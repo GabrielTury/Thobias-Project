@@ -4895,7 +4895,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a574b444d0ead554ca4b9c4c35fa72f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1a0cdb38f549cf48aca6c8c4fe79f14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4920,7 +4920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shoot: {fileID: 7740967878254391824}
   player: {fileID: 0}
-  rangeRadius: 4
+  rangeRadius: 11.44
   layerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -9810,9 +9810,9 @@ GameObject:
   - component: {fileID: 7740967879655077147}
   - component: {fileID: 7740967879655077140}
   - component: {fileID: 7740967879655077141}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun_Base
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9826,7 +9826,7 @@ Transform:
   m_GameObject: {fileID: 7740967879655077142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.576, y: 0.369, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 7740967878870677193}
   m_Father: {fileID: 0}
@@ -9871,8 +9871,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 52d2244fa4c4a50488f6dd15d302c190, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 25374b06a8b17584d8a12e4a61c3482b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9908,20 +9908,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.084126055, y: 0.6032622}
-      - {x: -0.07891473, y: 0.6032623}
-      - {x: -0.07513633, y: 0.36477494}
-      - {x: -0.1934514, y: 0.26898372}
-      - {x: -0.17761707, y: -0.23364162}
+    - - {x: 0.07705106, y: 0.6339166}
+      - {x: -0.07183974, y: 0.6386328}
+      - {x: -0.11522244, y: 0.41429368}
+      - {x: -0.15808026, y: 0.3727371}
+      - {x: -0.15639465, y: -0.41285226}
       - {x: -0.26958847, y: -0.4372648}
       - {x: -0.48393345, y: -0.45016918}
       - {x: -0.5, y: -0.5}
       - {x: 0.5, y: -0.5}
       - {x: 0.47608852, y: -0.4397787}
       - {x: 0.25035334, y: -0.43511057}
-      - {x: 0.18728161, y: -0.2311852}
-      - {x: 0.20584393, y: 0.27270103}
-      - {x: 0.11538765, y: 0.3627675}
+      - {x: 0.16841793, y: -0.42218596}
+      - {x: 0.15526626, y: 0.07119605}
+      - {x: 0.21729577, y: 0.09778115}
+      - {x: 0.21763515, y: 0.32457772}
+      - {x: 0.12010389, y: 0.41700232}
 --- !u!114 &7740967879655077141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9934,4 +9936,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3442699083ae24eafbe07976a6adbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 3

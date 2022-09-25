@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NewControls : MonoBehaviour
 {
-
+    public static NewControls instance;
     Rigidbody2D rig;
+
     #region Move Variables
     private float verticalInput;
     private float moveInput;
@@ -19,7 +20,6 @@ public class NewControls : MonoBehaviour
     #region Stuff
     public Animator anima;
     public ParticleSystem fire;
-    //Collider2D m_Collider;
     #endregion
 
     #region Check Variables
@@ -43,10 +43,11 @@ public class NewControls : MonoBehaviour
     #region Dash Variables
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 6f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 1f;
-    private float dashingPowerUp = 8f;
+    [Space(30)]
+    public float dashingPower = 6f;
+    public float dashingTime = 0.2f;
+    public float dashingCooldown = 1f;
+    public float dashingPowerUp = 8f;
     #endregion
 
     #region WallJump Variables
@@ -64,16 +65,12 @@ public class NewControls : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        //m_Collider = GetComponent<Collider2D>();
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if(isDashing)
-        {
-            m_Collider.enabled = !m_Collider.enabled;
-        }*/
         
         if (isDashing)
         {
@@ -96,6 +93,22 @@ public class NewControls : MonoBehaviour
         {
             lastOnGroundTime -= Time.deltaTime;
         }
+        #endregion
+
+        #region ANIMATIONS
+        if (rig.velocity.y < 0)
+        {
+            anima.SetBool("JumpUp", false);
+            anima.SetBool("Falling", true);
+        }
+        else
+            anima.SetBool("Falling", false);
+
+
+        if (IsGrounded())
+            anima.SetBool("Grounded", true);
+        else
+            anima.SetBool("Grounded", false);
         #endregion
 
         #region SHOOT
@@ -157,6 +170,8 @@ public class NewControls : MonoBehaviour
 
     private void FixedUpdate()
     {
+        TrepassEnemy(isDashing);
+
         if(isDashing)
         {
             return;
@@ -202,6 +217,7 @@ public class NewControls : MonoBehaviour
         if (lastOnGroundTime > 0f && !isJumping)
         {
             rig.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
+            anima.SetBool("JumpUp", true);
             lastOnGroundTime = 0f;
             StartCoroutine(JumpCooldown());
         }
@@ -271,11 +287,22 @@ public class NewControls : MonoBehaviour
         }
     }
 
+    private void TrepassEnemy(bool dashing)
+    {
+        if (dashing)
+        {
+            Physics2D.IgnoreLayerCollision(6, 9, true);
+        }
+        else
+            Physics2D.IgnoreLayerCollision(6, 9, false);
+    }
+
     #region DASH
     private IEnumerator Dash()
     {
         canDash = false;
         isDashing = true;
+        anima.SetBool("IsDashing", true);
         float originalGravity = rig.gravityScale;
         rig.gravityScale = 0f;
         rig.velocity = Vector3.zero;
@@ -296,12 +323,19 @@ public class NewControls : MonoBehaviour
             rig.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         }
         yield return new WaitForSeconds(dashingTime);
-        rig.AddForce(breakForce * Vector2.right * Mathf.Sign(-rig.velocity.x), ForceMode2D.Force);
+        //rig.AddForce(breakForce * Vector2.right * Mathf.Sign(-rig.velocity.x), ForceMode2D.Force);
+        rig.velocity = new Vector2(rig.velocity.x * 0.3f, rig.velocity.y * 0.3f);
         rig.gravityScale = originalGravity;
         isDashing = false;
+        anima.SetBool("IsDashing", false);
         //Não Ignorar o collider
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
     #endregion
+
+    public void GotHit()
+    {
+        anima.SetTrigger("Hit");
+    }
 } 

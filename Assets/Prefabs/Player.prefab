@@ -9869,6 +9869,10 @@ MonoBehaviour:
     m_Bits: 128
   coyoteTime: 0.3
   jumpForce: 10
+  dashingPower: 10
+  dashingTime: 0.4
+  dashingCooldown: 1
+  dashingPowerUp: 8
   wallSlidingSpeed: 5
   xWallForce: 15
   yWallForce: 30
