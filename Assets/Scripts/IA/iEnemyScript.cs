@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class iEnemyScript : MonoBehaviour
 {
@@ -28,12 +30,22 @@ public class iEnemyScript : MonoBehaviour
     bool forAttackDamage = false;
     public bool invincible = false;
 
+    private Slider slider;
+    public GameObject lifeBar;
+
     //Start
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.SetBool("STILL", true);
+
+
+        if (lifeBar != null) 
+        {
+            slider = lifeBar.GetComponent<Slider>();
+            lifeBar.SetActive(false);
+        }
     }
 
     private void Awake()
@@ -54,6 +66,8 @@ public class iEnemyScript : MonoBehaviour
         {
             animator.SetBool("STILL", false);
             animator.SetBool("IDLE", true);
+            if(lifeBar != null)
+            lifeBar.SetActive(true);
         }
 
 
@@ -145,6 +159,8 @@ public class iEnemyScript : MonoBehaviour
         {
             animator.SetBool("TAKINGDAMAGE", true);
             iEnemyLife--;
+            if(lifeBar != null)
+            slider.value = iEnemyLife;
             if (iEnemyLife <= 0)
             {
                 animator.SetBool("ATTACKING", false);
@@ -165,7 +181,8 @@ public class iEnemyScript : MonoBehaviour
 
     private void FrameToDie()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        StartCoroutine(Defeated());
     }
 
 
@@ -185,7 +202,18 @@ public class iEnemyScript : MonoBehaviour
 
         invincible = false;
     }
+
+    IEnumerator Defeated()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Credits");
+    }
 }
+
+
+
+
+
 
 /*
 

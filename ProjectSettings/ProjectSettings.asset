@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Melies
-  productName: MegamanRemix
+  companyName: Thobias Project
+  productName: Remains Of The Past
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 0.1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -154,6 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Melies.MegamanRemix
+    Standalone: com.Thobias-Project.Remains-Of-The-Past
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -270,7 +271,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: dff52db855949e243a7e8aac5109d644, type: 3}
+      m_Icon: {fileID: 2800000, guid: 78126a54260de944685b7aeaad92a0ab, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -697,7 +698,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: MegamanRemix
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -705,7 +706,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: MegamanRemix
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: MegamanRemix
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour {
     GameObject playerinstance;
     public MyCamera mycamera;
 
+    public GameObject pauseMenu;
+    private bool paused;
+
     // Use this for initialization
     void Start () {
         instance = this;
@@ -27,6 +30,24 @@ public class LevelManager : MonoBehaviour {
         {
             CreatePlayer();
             //Stationary_Enemy.instance.GetPlayerTransform(); //-- Descobrir pq isso só funciona com 1 ao mesmo tempo
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !paused)
+        {
+            paused = true;
+            Time.timeScale = 0f;
+            pauseMenu.SetActive(true);          
+        }else if (Input.GetKeyDown(KeyCode.Escape) && paused)
+        {
+            paused = false;
+            Time.timeScale = 2.0f;
+            pauseMenu.SetActive(false);
+        }
+
+        if(Time.timeScale != 0)
+        {
+            pauseMenu.SetActive(false);
+            paused = false;
         }
     }
     /// <summary>

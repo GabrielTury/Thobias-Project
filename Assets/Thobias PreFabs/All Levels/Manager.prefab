@@ -80,3 +80,4 @@ MonoBehaviour:
   playerprefab: {fileID: 1989187543047504, guid: c45b7be3af53a5545a80450e64fc63e6,
     type: 3}
   mycamera: {fileID: 0}
+  pauseMenu: {fileID: 0}
