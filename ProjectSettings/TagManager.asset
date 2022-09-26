@@ -11,6 +11,7 @@ TagManager:
   - Key
   - Button
   - Checkpoint
+  - PlayerShot
   layers:
   - Default
   - TransparentFX

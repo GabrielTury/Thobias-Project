@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 199992784841138236}
   m_Layer: 6
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: PlayerShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9871,7 +9871,7 @@ MonoBehaviour:
   jumpForce: 10
   dashingPower: 10
   dashingTime: 0.4
-  dashingCooldown: 1
+  dashingCooldown: 2
   dashingPowerUp: 8
   wallSlidingSpeed: 5
   xWallForce: 15

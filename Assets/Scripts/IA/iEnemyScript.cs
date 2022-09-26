@@ -26,6 +26,7 @@ public class iEnemyScript : MonoBehaviour
     bool stillIdle = false;
     bool rangeOneOn = true;
     bool forAttackDamage = false;
+    public bool invincible = false;
 
     //Start
     void Start()
@@ -43,7 +44,8 @@ public class iEnemyScript : MonoBehaviour
     //Update
     void Update()
     {
-
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("iEnemy taking damage"))
+            StartCoroutine(TakingDamageDelay());
     }
 
     private void FixedUpdate()
@@ -108,7 +110,7 @@ public class iEnemyScript : MonoBehaviour
             rangeOneOn = true;
         }
 
-        
+
         if (hit.collider != null && animator.GetBool("ATTACKING"))
         {
             forAttackDamage = true;
@@ -137,9 +139,9 @@ public class iEnemyScript : MonoBehaviour
         Gizmos.DrawLine(startingPositionTwo, finalPositionTwo);
     }
 
-    private void OnParticleCollision()
+    private void OnParticleCollision(GameObject other)
     {
-        if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("iEnemy attack") || animator.GetBool("STILL"))
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("iEnemy attack") && invincible == false && other.gameObject.CompareTag("PlayerShot") || animator.GetBool("STILL") && invincible == false && other.gameObject.CompareTag("PlayerShot"))
         {
             animator.SetBool("TAKINGDAMAGE", true);
             iEnemyLife--;
@@ -148,7 +150,7 @@ public class iEnemyScript : MonoBehaviour
                 animator.SetBool("ATTACKING", false);
                 animator.SetBool("DYING", true);
             }
-                stillIdle = true;
+            stillIdle = true;
         }
         else
         {
@@ -173,6 +175,15 @@ public class iEnemyScript : MonoBehaviour
         {
             LevelManager.instance.TouchDamage();
         }
+    }
+
+    IEnumerator TakingDamageDelay()
+    {
+        invincible = true;
+
+        yield return new WaitForSeconds(2);
+
+        invincible = false;
     }
 }
 

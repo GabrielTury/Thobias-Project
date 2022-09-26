@@ -234,13 +234,11 @@ public class NewControls : MonoBehaviour
     void ChangeDirection()
     {
         scale = transform.localScale;
-        scale.x = 1.5f*moveInput;
+        scale.x = 1.5f * moveInput;
         transform.localScale = scale;
         float actualVelocity;
         actualVelocity = rig.velocity.x;
-        print(actualVelocity);
         actualVelocity *= -0.3f;
-        print(actualVelocity);
         rig.velocity = new Vector2(actualVelocity, rig.velocity.y);
     }
 
@@ -262,6 +260,7 @@ public class NewControls : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(frontCheck.position, frontCheckSize);
     }
+    #region COLLISIONS
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
@@ -286,6 +285,7 @@ public class NewControls : MonoBehaviour
             LevelManager.instance.LowDamage();
         }
     }
+    #endregion
 
     private void TrepassEnemy(bool dashing)
     {

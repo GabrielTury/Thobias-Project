@@ -295,7 +295,7 @@ TextureImporter:
       name: More objects_2
       rect:
         serializedVersion: 2
-        x: 151
+        x: 150
         y: 220
         width: 24
         height: 30
@@ -320,8 +320,8 @@ TextureImporter:
         y: 220
         width: 36
         height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -16,9 +16,10 @@ public class TurretLide : MonoBehaviour
     {
         
     }
-    private void OnParticleCollision()
+    private void OnParticleCollision(GameObject other)
     {
-        life--;
+        if (other.gameObject.CompareTag("PlayerShot"))
+            life--;
         if (life <= 0)
         {
             Destroy(gameObject);

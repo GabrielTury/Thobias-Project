@@ -120,15 +120,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchDamageValue: 0.05
   atackDamageValue: 0.26
-  iEnemyLife: 5
-  rangeDistanceOne: 15.62
-  rangeHeightOne: 0.44
-  rangeDistanceTwo: 2.34
-  rangeHeightTwo: 0.72
-  iEnemyVelocity: 1.8
+  iEnemyLife: 6
+  rangeDistanceOne: 15.7
+  rangeHeightOne: 0.6
+  rangeDistanceTwo: 5.5
+  rangeHeightTwo: 1
+  iEnemyVelocity: 2.5
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+  invincible: 0
 --- !u!50 &5600675190038876351
 Rigidbody2D:
   serializedVersion: 4
@@ -163,6 +164,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0021600723, y: 0.4756818}
-  m_Size: {x: 0.67068195, y: 0.96522814}
+  m_Offset: {x: 0.054069757, y: 1.6227689}
+  m_Size: {x: 2.1101642, y: 3.2818942}
   m_Direction: 0

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666691159976932254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.84, y: -3.4, z: 0.011134833}
+  m_LocalPosition: {x: -64.4, y: -1.55, z: 0.011134833}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1666691161769978554}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb753a2c2ef9464d9d232d740ac8231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifebar: {fileID: 0}
+  slider: {fileID: 0}
   life: 1
   respawn: {fileID: 1666691159976932254}
   playerprefab: {fileID: 1989187543047504, guid: c45b7be3af53a5545a80450e64fc63e6,

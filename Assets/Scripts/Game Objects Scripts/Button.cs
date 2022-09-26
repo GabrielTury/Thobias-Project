@@ -35,6 +35,7 @@ public class Button : MonoBehaviour
        if (collision.collider.CompareTag("Player") && (checkForProjectileOnly == false))
        {
          anima.SetBool("ButtonDownAnimator", true);
+            GetComponent<Collider2D>().enabled = false;
        }
     }
 }
