@@ -32,5 +32,5 @@ public class Parallax : MonoBehaviour
         {
             startPosition -= length;
         }
-    }
+}
 }
